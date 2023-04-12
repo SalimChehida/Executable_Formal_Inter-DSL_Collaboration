@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cM_DSL:CM xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cM_DSL="http://www.example.org/cM_DSL" selectedConf="//@configurations.2" nameCMM="RTE Config">
+  <infrastructures nameInf="Centralized RTE"/>
+  <infrastructures nameInf="Collaborative Fog"/>
+  <infrastructures nameInf="Hierarchical Fog-Cloud"/>
+  <configurations nameConf="AM2-IM2" QoS="1.0" infr="//@infrastructures.1" app="//@applications.1"/>
+  <configurations nameConf="AM3-IM2" QoS="2.35" infr="//@infrastructures.0" app="//@applications.2"/>
+  <configurations nameConf="AM1-IM2" QoS="0.95" infr="//@infrastructures.1" app="//@applications.0"/>
+  <applications nameApp="Fast Action"/>
+  <applications nameApp="Normal"/>
+  <applications nameApp="Enhanced Forecasting"/>
+</cM_DSL:CM>

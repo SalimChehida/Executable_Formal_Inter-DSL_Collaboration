@@ -1,0 +1,40 @@
+datatype CONFIGURATION = CONFIGURATION1 | CONFIGURATION2 | CONFIGURATION3
+datatype THREAT = THREAT1 | THREAT2 | THREAT3 | THREAT4 | THREAT5 | THREAT6 | THREAT7 | THREAT8
+datatype DEFENSE = DEFENSE1 | DEFENSE2 | DEFENSE3 | DEFENSE4 | DEFENSE5 
+
+channel selectConfig, setQoS, approveSecureConfig
+channel ConfigurationRequestReceived, ValidConfigReceived, SRARequestReceived, DefensesReceived, start, start_cm, start_sra
+channel computeDefenses, affectValidDefenses : Set(DEFENSE)
+channel validateConfig, createSecureConfig : CONFIGURATION
+channel selectThreat : THREAT
+channel initSRA : Set(THREAT)
+
+MAIN = start -> DSL_COMPOSITION
+
+DSL_COMPOSITION = CM_DSL
+
+CM_DSL = start_cm -> IDENTIFY_CONFIGURATION
+
+IDENTIFY_CONFIGURATION = 
+	ConfigurationRequestReceived 
+	-> selectConfig -> setQoS -> validateConfig?conf 
+	-> CREATE_SECURE_CONFIG(conf) 
+
+CREATE_SECURE_CONFIG(conf) = 
+	ValidConfigReceived 
+	-> createSecureConfig!conf -> SRA_DSL
+
+SRA_DSL =  start_sra -> COMPUTE_CONFIGURATION_DEFENSES
+	
+COMPUTE_CONFIGURATION_DEFENSES = 
+	SRARequestReceived
+	-> initSRA?threats -> (|||x:threats@selectThreat!x -> SKIP) 
+	; computeDefenses?defs -> EVALUATE_SECURE_CONFIGURATION(defs) 
+                     
+EVALUATE_SECURE_CONFIGURATION(defs) = 
+	DefensesReceived -> affectValidDefenses!defs 
+	-> (approveSecureConfig -> SKIP [] SKIP) ; (MAIN [] SKIP)
+
+
+
+

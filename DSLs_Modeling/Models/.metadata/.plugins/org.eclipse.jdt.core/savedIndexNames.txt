@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\salim\Documents\MODWIN project\projects\runtime-EclipseApplication\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/Inter_DSL_Collaboration_CM_SRA/src-gen" creationIcons="false"
+    editDirectory="/Inter_DSL_Collaboration_CM_SRA.edit/src-gen" editorDirectory="/Inter_DSL_Collaboration_CM_SRA.editor/src-gen"
+    modelPluginID="Inter_DSL_Collaboration_CM_SRA" modelName="Inter_DSL_Collaboration_CM_SRA"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="../../CM_DSL/model/cM_DSL.genmodel#//cM_DSL ../../SRA_DSL/model/sRA_DSL.genmodel#//sRA_DSL"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>inter_DSL_Collaboration_CM_SRA.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Inter_DSL_Collaboration_CM_SRA" disposableProviderFactory="true"
+      ecorePackage="inter_DSL_Collaboration_CM_SRA.ecore#/">
+    <genClasses ecoreClass="inter_DSL_Collaboration_CM_SRA.ecore#//COMPOSITION">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference inter_DSL_Collaboration_CM_SRA.ecore#//COMPOSITION/sra"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference inter_DSL_Collaboration_CM_SRA.ecore#//COMPOSITION/cm"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference inter_DSL_Collaboration_CM_SRA.ecore#//COMPOSITION/secureConfigs"/>
+    </genClasses>
+    <genClasses ecoreClass="inter_DSL_Collaboration_CM_SRA.ecore#//SecureConfiguration">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference inter_DSL_Collaboration_CM_SRA.ecore#//SecureConfiguration/validConfig"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference inter_DSL_Collaboration_CM_SRA.ecore#//SecureConfiguration/validDefenses"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute inter_DSL_Collaboration_CM_SRA.ecore#//SecureConfiguration/nameSecConf"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute inter_DSL_Collaboration_CM_SRA.ecore#//SecureConfiguration/isValidSecConf"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute inter_DSL_Collaboration_CM_SRA.ecore#//SecureConfiguration/maxQoS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute inter_DSL_Collaboration_CM_SRA.ecore#//SecureConfiguration/relativeCost"/>
+      <genOperations ecoreOperation="inter_DSL_Collaboration_CM_SRA.ecore#//SecureConfiguration/createSecureConfig"/>
+      <genOperations ecoreOperation="inter_DSL_Collaboration_CM_SRA.ecore#//SecureConfiguration/affectValidDefenses"/>
+      <genOperations ecoreOperation="inter_DSL_Collaboration_CM_SRA.ecore#//SecureConfiguration/approveSecureConfig"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

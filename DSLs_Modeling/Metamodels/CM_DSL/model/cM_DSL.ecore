@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cM_DSL" nsURI="http://www.example.org/cM_DSL" nsPrefix="cM_DSL">
+  <eClassifiers xsi:type="ecore:EClass" name="CM">
+    <eOperations name="selectConfig" lowerBound="1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="infrastructures" upperBound="-1"
+        eType="#//Infrastructure" containment="true">
+      <eAnnotations source="meeduse">
+        <details key="association" value="infrastructures"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="configurations" upperBound="-1"
+        eType="#//Configuration" containment="true">
+      <eAnnotations source="meeduse">
+        <details key="association" value="configurations"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="applications" upperBound="-1"
+        eType="#//Application" containment="true">
+      <eAnnotations source="meeduse">
+        <details key="association" value="applications"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="selectedConf" eType="#//Configuration">
+      <eAnnotations source="meeduse">
+        <details key="association" value="selectedConf"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameCMM" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Configuration">
+    <eOperations name="validateConfig" lowerBound="1" eType="#//Configuration">
+      <eAnnotations source="meeduse">
+        <details key="body" value="result := aConfiguration"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setQoS" lowerBound="1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameConf" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="QoS" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isValid" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="infr" lowerBound="1" eType="#//Infrastructure">
+      <eAnnotations source="meeduse">
+        <details key="association" value="infr"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="app" lowerBound="1" eType="#//Application">
+      <eAnnotations source="meeduse">
+        <details key="association" value="app"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Infrastructure">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameInf" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="communications" upperBound="-1"
+        eType="#//Communication">
+      <eAnnotations source="meeduse">
+        <details key="association" value="communications"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Application">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameApp" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actions" upperBound="-1"
+        eType="#//Action">
+      <eAnnotations source="meeduse">
+        <details key="association" value="actions"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="opt_algo" eType="#//OptimisationAlgo">
+      <eAnnotations source="meeduse">
+        <details key="association" value="opt_algo"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OptimisationAlgo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Action"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Communication"/>
+</ecore:EPackage>

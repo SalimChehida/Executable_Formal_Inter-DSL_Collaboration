@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="inter_DSL_Collaboration_CM_SRA" nsURI="http://www.example.org/inter_DSL_Collaboration_CM_SRA"
+    nsPrefix="inter_DSL_Collaboration_CM_SRA">
+  <eClassifiers xsi:type="ecore:EClass" name="COMPOSITION">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sra" lowerBound="1" eType="ecore:EClass ../../SRA_DSL/model/sRA_DSL.ecore#//SRA">
+      <eAnnotations source="meeduse">
+        <details key="association" value="sra"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cm" lowerBound="1" eType="ecore:EClass ../../CM_DSL/model/cM_DSL.ecore#//CM">
+      <eAnnotations source="meeduse">
+        <details key="association" value="cm"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="secureConfigs" upperBound="-1"
+        eType="#//SecureConfiguration" containment="true">
+      <eAnnotations source="meeduse">
+        <details key="association" value="secureConfigs"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecureConfiguration">
+    <eOperations name="createSecureConfig" lowerBound="1"/>
+    <eOperations name="affectValidDefenses" lowerBound="1"/>
+    <eOperations name="approveSecureConfig" lowerBound="1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="validConfig" lowerBound="1"
+        eType="ecore:EClass ../../CM_DSL/model/cM_DSL.ecore#//Configuration">
+      <eAnnotations source="meeduse">
+        <details key="association" value="validConfig"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="validDefenses" upperBound="-1"
+        eType="ecore:EClass ../../SRA_DSL/model/sRA_DSL.ecore#//Defense">
+      <eAnnotations source="meeduse">
+        <details key="association" value="validDefenses"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameSecConf" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isValidSecConf" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxQoS" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat" defaultValueLiteral="2.0"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="relativeCost" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat" defaultValueLiteral="0.3"/>
+  </eClassifiers>
+</ecore:EPackage>

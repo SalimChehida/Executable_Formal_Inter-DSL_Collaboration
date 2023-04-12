@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inter_DSL_Collaboration_CM_SRA:COMPOSITION xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:inter_DSL_Collaboration_CM_SRA="http://www.example.org/inter_DSL_Collaboration_CM_SRA">
+  <sra href="../SRA_Model/My.sra_dsl#/"/>
+  <cm href="../CM_Model/My.cm_dsl#/"/>
+</inter_DSL_Collaboration_CM_SRA:COMPOSITION>

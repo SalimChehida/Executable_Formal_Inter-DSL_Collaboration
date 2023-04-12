@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated sRA_DSL -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="sRA_DSL.presentation.SRA_DSLModelWizardID"
+            name="%_UI_SRA_DSLModelWizard_label"
+            class="sRA_DSL.presentation.SRA_DSLModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SRA_DSLModelFile.gif">
+         <description>%_UI_SRA_DSLModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated sRA_DSL -->
+      <editor
+            id="sRA_DSL.presentation.SRA_DSLEditorID"
+            name="%_UI_SRA_DSLEditor_label"
+            icon="icons/full/obj16/SRA_DSLModelFile.gif"
+            extensions="sra_dsl"
+            class="sRA_DSL.presentation.SRA_DSLEditor"
+            contributorClass="sRA_DSL.presentation.SRA_DSLActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

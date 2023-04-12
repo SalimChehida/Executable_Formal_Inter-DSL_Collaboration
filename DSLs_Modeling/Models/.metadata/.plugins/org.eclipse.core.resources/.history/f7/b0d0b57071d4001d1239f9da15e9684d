@@ -1,0 +1,6 @@
+        Diagram : Default Collaboration Diagram
+        Collaboration : Collaboration_1
+        
+        Participant_1Participant_2Task_1StartEvent_1Task_2EndEvent_1StartEvent_2Task_3EndEvent_2
+        
+        org.eclipse.bpmn2.impl.CollaborationImpl@7b990c70 (id: Collaboration_1, anyAttribute: null) (isClosed: false, name: Default Collaboration)

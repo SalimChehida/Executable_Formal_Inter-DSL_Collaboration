@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;collaboration_CM_SRA.bpmn&apos; to &apos;model&apos;&#x0D;&#x0A;- Original project: &apos;Inter_DSL_Collaboration_CM_SRA&apos;&#x0D;&#x0A;- Destination element: &apos;model&apos;&#x0D;&#x0A;- Original element: &apos;collaboration_CM_SRA.bpmn&apos;" description="Copy file" element1="model/collaboration_CM_SRA.bpmn" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1675434063799" target="/Inter_DSL_Collaboration_CM_SRA/model" units="0" version="1.0"/>
+</session>

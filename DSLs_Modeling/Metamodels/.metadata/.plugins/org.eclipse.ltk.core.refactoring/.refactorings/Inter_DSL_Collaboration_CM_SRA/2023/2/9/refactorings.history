@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;Inter_DSL_Collaboration_CM_SRA&apos;&#x0D;&#x0A;- Original project: &apos;Inter_DSL_Collaboration_CM_SRA&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Inter_DSL_Collaboration_CM_SRA/src-gen/inter_DSL_Collaboration_CM_SRA&#x0D;&#x0A;     Inter_DSL_Collaboration_CM_SRA/src-gen/inter_DSL_Collaboration_CM_SRA.impl&#x0D;&#x0A;     Inter_DSL_Collaboration_CM_SRA/src-gen/inter_DSL_Collaboration_CM_SRA.util&#x0D;&#x0A;- Delete subpackages" description="Delete elements" element1="/src-gen&lt;inter_DSL_Collaboration_CM_SRA.util" element2="/src-gen&lt;inter_DSL_Collaboration_CM_SRA.impl" element3="/src-gen&lt;inter_DSL_Collaboration_CM_SRA" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1677494029421" subPackages="true" version="1.0"/>
+</session>

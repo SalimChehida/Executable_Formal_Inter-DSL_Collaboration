@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sRA_DSL" nsURI="http://www.example.org/sRA_DSL" nsPrefix="sRA_DSL">
+  <eAnnotations source="meeduse">
+    <details key="association" value="entry"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="SRA">
+    <eOperations name="selectThreat" lowerBound="1"/>
+    <eOperations name="computeDefenses" lowerBound="1"/>
+    <eOperations name="initSRA" lowerBound="1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="threats" upperBound="-1"
+        eType="#//Threat" containment="true">
+      <eAnnotations source="meeduse">
+        <details key="association" value="threats"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defenses" upperBound="-1"
+        eType="#//Defense" containment="true">
+      <eAnnotations source="meeduse">
+        <details key="association" value="defenses"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="compDefenses" upperBound="-1"
+        eType="#//Defense">
+      <eAnnotations source="meeduse">
+        <details key="association" value="compDefenses"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subThreats" upperBound="-1"
+        eType="#//Threat">
+      <eAnnotations source="meeduse">
+        <details key="association" value="subThreats"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entry" eType="#//Entry"
+        containment="true">
+      <eAnnotations source="meeduse">
+        <details key="association" value="entry"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameSRAM" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Entry" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defs" upperBound="-1" eType="#//Defense">
+      <eAnnotations source="meeduse">
+        <details key="association" value="defs"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="thrs" upperBound="-1" eType="#//Threat">
+      <eAnnotations source="meeduse">
+        <details key="association" value="thrs"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Threat">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameTh" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Defense">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameDef" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="costDef" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AND" eSuperTypes="#//Entry">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entryAnd" upperBound="-1"
+        eType="#//Entry" containment="true">
+      <eAnnotations source="meeduse">
+        <details key="association" value="entryAnd"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OR" eSuperTypes="#//Entry">
+    <eAnnotations source="meeduse">
+      <details key="alias" value="Or"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entryOr" upperBound="-1"
+        eType="#//Entry" containment="true">
+      <eAnnotations source="meeduse">
+        <details key="association" value="entryOr"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NOT" eSuperTypes="#//Entry">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entryNot" eType="#//Entry"
+        containment="true">
+      <eAnnotations source="meeduse">
+        <details key="association" value="entryNot"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

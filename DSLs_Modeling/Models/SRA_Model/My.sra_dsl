@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sRA_DSL:SRA xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sRA_DSL="http://www.example.org/sRA_DSL" nameSRAM="RTE sec model">
+  <threats nameTh="T1"/>
+  <threats nameTh="T2"/>
+  <threats nameTh="T3"/>
+  <threats nameTh="T4"/>
+  <threats nameTh="T5"/>
+  <threats nameTh="T6"/>
+  <threats nameTh="T7"/>
+  <threats nameTh="T8"/>
+  <defenses nameDef="D1" costDef="0.4"/>
+  <defenses nameDef="D2" costDef="0.1"/>
+  <defenses nameDef="D3" costDef="0.3"/>
+  <defenses nameDef="D4" costDef="0.05"/>
+  <defenses nameDef="D5" costDef="0.01"/>
+  <entry xsi:type="sRA_DSL:OR">
+    <entryOr xsi:type="sRA_DSL:AND">
+      <entryAnd xsi:type="sRA_DSL:NOT" defs="//@defenses.0"/>
+      <entryAnd xsi:type="sRA_DSL:OR" thrs="//@threats.6">
+        <entryOr xsi:type="sRA_DSL:AND">
+          <entryAnd xsi:type="sRA_DSL:OR" thrs="//@threats.0 //@threats.2 //@threats.3 //@threats.4"/>
+          <entryAnd xsi:type="sRA_DSL:NOT" defs="//@defenses.2"/>
+        </entryOr>
+      </entryAnd>
+    </entryOr>
+    <entryOr xsi:type="sRA_DSL:AND">
+      <entryAnd xsi:type="sRA_DSL:NOT" defs="//@defenses.1"/>
+      <entryAnd xsi:type="sRA_DSL:OR" thrs="//@threats.4 //@threats.5 //@threats.6"/>
+    </entryOr>
+    <entryOr xsi:type="sRA_DSL:AND">
+      <entryAnd xsi:type="sRA_DSL:NOT" defs="//@defenses.3"/>
+      <entryAnd xsi:type="sRA_DSL:OR" thrs="//@threats.1 //@threats.2 //@threats.3 //@threats.7"/>
+    </entryOr>
+    <entryOr xsi:type="sRA_DSL:AND">
+      <entryAnd xsi:type="sRA_DSL:NOT" defs="//@defenses.4"/>
+      <entryAnd xsi:type="sRA_DSL:OR" thrs="//@threats.1 //@threats.2 //@threats.5 //@threats.6 //@threats.7"/>
+    </entryOr>
+  </entry>
+</sRA_DSL:SRA>

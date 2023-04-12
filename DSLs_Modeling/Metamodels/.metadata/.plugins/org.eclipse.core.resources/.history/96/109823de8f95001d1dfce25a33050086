@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sRA_DSL" nsURI="http://www.example.org/sRA_DSL" nsPrefix="sRA_DSL">
+  <eClassifiers xsi:type="ecore:EClass" name="SRA">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="threat" upperBound="-1"
+        eType="#//Threat" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defense" upperBound="-1"
+        eType="#//Defense" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="compDefenses" upperBound="-1"
+        eType="#//Defense"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subThreats" upperBound="-1"
+        eType="#//Threat"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entry" eType="#//Entry"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Entry" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="defenses" upperBound="-1"
+        eType="#//Defense"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="threats" upperBound="-1"
+        eType="#//Threat"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Threat">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameTh" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Defense">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameDef" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="costDef" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AND" eSuperTypes="#//Entry">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entry" upperBound="-1"
+        eType="#//Entry" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OR" eSuperTypes="#//Entry">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entry" upperBound="-1"
+        eType="#//Entry" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NOT" eSuperTypes="#//Entry">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entry" eType="#//Entry"
+        containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

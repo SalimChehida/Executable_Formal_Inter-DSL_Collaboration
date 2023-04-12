@@ -1,0 +1,41 @@
+#
+
+pluginName = CM_DSL Edit Support
+providerName = www.example.org
+
+_UI_CreateChild_text = {0}
+_UI_CreateChild_text2 = {1} {0}
+_UI_CreateChild_text3 = {1}
+_UI_CreateChild_tooltip = Create New {0} Under {1} Feature
+_UI_CreateChild_description = Create a new child of type {0} for the {1} feature of the selected {2}.
+_UI_CreateSibling_description = Create a new sibling of type {0} for the selected {2}, under the {1} feature of their parent.
+
+_UI_PropertyDescriptor_description = The {0} of the {1}
+
+_UI_CM_type = CM
+_UI_Configuration_type = Configuration
+_UI_Infrastructure_type = Infrastructure
+_UI_Application_type = Application
+_UI_Unknown_type = Object
+
+_UI_Unknown_datatype= Value
+
+_UI_CM_infrastructure_feature = Infrastructure
+_UI_CM_configuration_feature = Configuration
+_UI_CM_application_feature = Application
+_UI_CM_selectConf_feature = Select Conf
+_UI_CM_nameCMM_feature = Name CMM
+_UI_Configuration_nameConf_feature = Name Conf
+_UI_Configuration_QoS_feature = Qo S
+_UI_Configuration_isValid_feature = Is Valid
+_UI_Configuration_infrastructure_feature = Infrastructure
+_UI_Configuration_application_feature = Application
+_UI_Infrastructure_modeInf_feature = Mode Inf
+_UI_Infrastructure_communications_feature = Communications
+_UI_Infrastructure_configuration_feature = Configuration
+_UI_Application_modeApp_feature = Mode App
+_UI_Application_optAlgo_feature = Opt Algo
+_UI_Application_actions_feature = Actions
+_UI_Application_configuration_feature = Configuration
+_UI_Unknown_feature = Unspecified
+

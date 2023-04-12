@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/SRA_DSL/src-gen" creationIcons="false" editDirectory="/SRA_DSL.edit/src-gen"
+    editorDirectory="/SRA_DSL.editor/src-gen" modelPluginID="SRA_DSL" modelName="SRA_DSL"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>sRA_DSL.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="SRA_DSL" disposableProviderFactory="true" ecorePackage="sRA_DSL.ecore#/">
+    <genClasses ecoreClass="sRA_DSL.ecore#//SRA">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sRA_DSL.ecore#//SRA/threat"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sRA_DSL.ecore#//SRA/defense"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sRA_DSL.ecore#//SRA/compDefenses"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sRA_DSL.ecore#//SRA/subThreats"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sRA_DSL.ecore#//SRA/entry"/>
+    </genClasses>
+    <genClasses ecoreClass="sRA_DSL.ecore#//Entry">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sRA_DSL.ecore#//Entry/defenses"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sRA_DSL.ecore#//Entry/threats"/>
+    </genClasses>
+    <genClasses ecoreClass="sRA_DSL.ecore#//Threat">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sRA_DSL.ecore#//Threat/nameTh"/>
+    </genClasses>
+    <genClasses ecoreClass="sRA_DSL.ecore#//Defense">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sRA_DSL.ecore#//Defense/nameDef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sRA_DSL.ecore#//Defense/costDef"/>
+    </genClasses>
+    <genClasses ecoreClass="sRA_DSL.ecore#//AND">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sRA_DSL.ecore#//AND/entry"/>
+    </genClasses>
+    <genClasses ecoreClass="sRA_DSL.ecore#//OR">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sRA_DSL.ecore#//OR/entry"/>
+    </genClasses>
+    <genClasses ecoreClass="sRA_DSL.ecore#//NOT">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sRA_DSL.ecore#//NOT/entry"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

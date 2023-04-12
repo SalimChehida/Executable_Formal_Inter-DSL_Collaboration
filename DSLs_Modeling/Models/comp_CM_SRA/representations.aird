@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" uid="_wttOIKbkEe23IIsSAFwG6g" version="15.0.0.202209061200">
+  <semanticResources>My.inter_dsl_collaboration_cm_sra</semanticResources>
+  <semanticResources>platform:/resource/SRA_Model/My.sra_dsl</semanticResources>
+  <semanticResources>platform:/resource/CM_Model/My.cm_dsl</semanticResources>
+  <semanticResources>http://fr.liglab.vasco/b4msecure/2.0/transformation/functional/B4MSecure.transformationconfig</semanticResources>
+  <semanticResources>platform:/plugin/Inter_DSL_Collaboration_CM_SRA/model/inter_DSL_Collaboration_CM_SRA.ecore</semanticResources>
+  <semanticResources>platform:/plugin/SRA_DSL/model/sRA_DSL.ecore</semanticResources>
+  <semanticResources>platform:/plugin/CM_DSL/model/cM_DSL.ecore</semanticResources>
+  <semanticResources>animation/My/My.inter_dsl_collaboration_cm_sra.bmethod</semanticResources>
+  <semanticResources>collaboration_CM_SRA2.bpmn</semanticResources>
+</viewpoint:DAnalysis>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cM_DSL" nsURI="http://www.example.org/cM_DSL" nsPrefix="cM_DSL">
+  <eClassifiers xsi:type="ecore:EClass" name="CM">
+    <eOperations name="selectConfig"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="infrastructure" upperBound="-1"
+        eType="#//Infrastructure" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="configuration" upperBound="-1"
+        eType="#//Configuration" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="application" upperBound="-1"
+        eType="#//Application" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="selectConf" eType="#//Configuration"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameCMM" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Configuration">
+    <eOperations name="validateConfig" eType="#//Configuration">
+      <eAnnotations source="meeduse">
+        <details key="body" value="result := aConfiguration"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations name="setQoS"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nameConf" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="QoS" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isValid" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="infr" lowerBound="1" eType="#//Infrastructure"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="app" lowerBound="1" eType="#//Application"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Infrastructure">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modeInf" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="communication" upperBound="-1"
+        eType="#//Communication"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Application">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modeApp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="action" upperBound="-1"
+        eType="#//Action"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="optalgo" eType="#//OptimisationAlgo"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OptimisationAlgo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Action"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Communication"/>
+</ecore:EPackage>

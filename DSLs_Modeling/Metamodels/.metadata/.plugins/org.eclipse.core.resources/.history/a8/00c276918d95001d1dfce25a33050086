@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sRA_DSL" nsURI="http://www.example.org/sRA_DSL" nsPrefix="sRA_DSL">
+  <eClassifiers xsi:type="ecore:EClass" name="SRA"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Entry"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Threat"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Defense"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AND"/>
+  <eClassifiers xsi:type="ecore:EClass" name="OR"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NOT"/>
+</ecore:EPackage>

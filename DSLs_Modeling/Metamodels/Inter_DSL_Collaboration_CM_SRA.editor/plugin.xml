@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated inter_DSL_Collaboration_CM_SRA -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="inter_DSL_Collaboration_CM_SRA.presentation.Inter_DSL_Collaboration_CM_SRAModelWizardID"
+            name="%_UI_Inter_DSL_Collaboration_CM_SRAModelWizard_label"
+            class="inter_DSL_Collaboration_CM_SRA.presentation.Inter_DSL_Collaboration_CM_SRAModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Inter_DSL_Collaboration_CM_SRAModelFile.gif">
+         <description>%_UI_Inter_DSL_Collaboration_CM_SRAModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated inter_DSL_Collaboration_CM_SRA -->
+      <editor
+            id="inter_DSL_Collaboration_CM_SRA.presentation.Inter_DSL_Collaboration_CM_SRAEditorID"
+            name="%_UI_Inter_DSL_Collaboration_CM_SRAEditor_label"
+            icon="icons/full/obj16/Inter_DSL_Collaboration_CM_SRAModelFile.gif"
+            extensions="inter_dsl_collaboration_cm_sra"
+            class="inter_DSL_Collaboration_CM_SRA.presentation.Inter_DSL_Collaboration_CM_SRAEditor"
+            contributorClass="inter_DSL_Collaboration_CM_SRA.presentation.Inter_DSL_Collaboration_CM_SRAActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

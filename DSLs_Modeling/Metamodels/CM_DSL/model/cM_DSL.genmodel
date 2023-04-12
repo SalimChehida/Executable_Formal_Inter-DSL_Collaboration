@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/CM_DSL/src" modelPluginID="CM_DSL" modelName="CM_DSL"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>cM_DSL.ecore</foreignModel>
+  <genPackages prefix="CM_DSL" disposableProviderFactory="true" ecorePackage="cM_DSL.ecore#/">
+    <genClasses ecoreClass="cM_DSL.ecore#//CM">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cM_DSL.ecore#//CM/infrastructures"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cM_DSL.ecore#//CM/configurations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cM_DSL.ecore#//CM/applications"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cM_DSL.ecore#//CM/selectedConf"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cM_DSL.ecore#//CM/nameCMM"/>
+      <genOperations ecoreOperation="cM_DSL.ecore#//CM/selectConfig"/>
+    </genClasses>
+    <genClasses ecoreClass="cM_DSL.ecore#//Configuration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cM_DSL.ecore#//Configuration/nameConf"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cM_DSL.ecore#//Configuration/QoS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cM_DSL.ecore#//Configuration/isValid"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cM_DSL.ecore#//Configuration/infr"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cM_DSL.ecore#//Configuration/app"/>
+      <genOperations ecoreOperation="cM_DSL.ecore#//Configuration/validateConfig"/>
+      <genOperations ecoreOperation="cM_DSL.ecore#//Configuration/setQoS"/>
+    </genClasses>
+    <genClasses ecoreClass="cM_DSL.ecore#//Infrastructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cM_DSL.ecore#//Infrastructure/nameInf"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cM_DSL.ecore#//Infrastructure/communications"/>
+    </genClasses>
+    <genClasses ecoreClass="cM_DSL.ecore#//Application">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cM_DSL.ecore#//Application/nameApp"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cM_DSL.ecore#//Application/actions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cM_DSL.ecore#//Application/opt_algo"/>
+    </genClasses>
+    <genClasses ecoreClass="cM_DSL.ecore#//OptimisationAlgo"/>
+    <genClasses ecoreClass="cM_DSL.ecore#//Action"/>
+    <genClasses ecoreClass="cM_DSL.ecore#//Communication"/>
+  </genPackages>
+</genmodel:GenModel>

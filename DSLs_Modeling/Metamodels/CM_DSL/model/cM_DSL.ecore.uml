@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_PIvvMLaGEe2S6c7PkQ69Iw" name="cM_DSL" URI="http://www.example.org/cM_DSL">
+  <packagedElement xmi:type="uml:Class" xmi:id="_PIvvMbaGEe2S6c7PkQ69Iw" name="CM">
+    <ownedAttribute xmi:id="_PIvvMraGEe2S6c7PkQ69Iw" name="infrastructures" type="_PIvvP7aGEe2S6c7PkQ69Iw" aggregation="composite" association="_PIvvSbaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvM7aGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvNLaGEe2S6c7PkQ69Iw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PIvvNbaGEe2S6c7PkQ69Iw" name="configurations" type="_PIvvTbaGEe2S6c7PkQ69Iw" aggregation="composite" association="_PIvvcbaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvNraGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvN7aGEe2S6c7PkQ69Iw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PIvvOLaGEe2S6c7PkQ69Iw" name="applications" type="_PIvvXLaGEe2S6c7PkQ69Iw" aggregation="composite" association="_PIvvdbaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvObaGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvOraGEe2S6c7PkQ69Iw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PIvvO7aGEe2S6c7PkQ69Iw" name="selectedConf" type="_PIvvTbaGEe2S6c7PkQ69Iw" association="_PIvvebaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvPLaGEe2S6c7PkQ69Iw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PIvvPbaGEe2S6c7PkQ69Iw" name="nameCMM" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_PIvvPraGEe2S6c7PkQ69Iw" name="selectConfig" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PIvvP7aGEe2S6c7PkQ69Iw" name="Infrastructure">
+    <ownedAttribute xmi:id="_PIvvQLaGEe2S6c7PkQ69Iw" name="nameInf" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PIvvQbaGEe2S6c7PkQ69Iw" name="communications" type="_PIvvRLaGEe2S6c7PkQ69Iw" association="_PIvvRbaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvQraGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvQ7aGEe2S6c7PkQ69Iw" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PIvvRLaGEe2S6c7PkQ69Iw" name="Communication"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PIvvRbaGEe2S6c7PkQ69Iw" name="communications" memberEnd="_PIvvQbaGEe2S6c7PkQ69Iw _PIvvRraGEe2S6c7PkQ69Iw">
+    <ownedEnd xmi:id="_PIvvRraGEe2S6c7PkQ69Iw" type="_PIvvP7aGEe2S6c7PkQ69Iw" association="_PIvvRbaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvR7aGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvSLaGEe2S6c7PkQ69Iw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PIvvSbaGEe2S6c7PkQ69Iw" name="infrastructures" memberEnd="_PIvvMraGEe2S6c7PkQ69Iw _PIvvSraGEe2S6c7PkQ69Iw">
+    <ownedEnd xmi:id="_PIvvSraGEe2S6c7PkQ69Iw" type="_PIvvMbaGEe2S6c7PkQ69Iw" association="_PIvvSbaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvS7aGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvTLaGEe2S6c7PkQ69Iw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PIvvTbaGEe2S6c7PkQ69Iw" name="Configuration">
+    <ownedAttribute xmi:id="_PIvvTraGEe2S6c7PkQ69Iw" name="nameConf" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PIvvT7aGEe2S6c7PkQ69Iw" name="QoS" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PIvvULaGEe2S6c7PkQ69Iw" name="isValid" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PIvvUbaGEe2S6c7PkQ69Iw" name="infr" type="_PIvvP7aGEe2S6c7PkQ69Iw" association="_PIvvWLaGEe2S6c7PkQ69Iw"/>
+    <ownedAttribute xmi:id="_PIvvUraGEe2S6c7PkQ69Iw" name="app" type="_PIvvXLaGEe2S6c7PkQ69Iw" association="_PIvvbbaGEe2S6c7PkQ69Iw"/>
+    <ownedOperation xmi:id="_PIvvU7aGEe2S6c7PkQ69Iw" name="validateConfig" visibility="public" bodyCondition="_PIvvVLaGEe2S6c7PkQ69Iw">
+      <ownedRule xmi:id="_PIvvVLaGEe2S6c7PkQ69Iw" name="body">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_PIvvVbaGEe2S6c7PkQ69Iw">
+          <language>B</language>
+          <body>result := aConfiguration</body>
+        </specification>
+      </ownedRule>
+      <ownedParameter xmi:id="_PIvvVraGEe2S6c7PkQ69Iw" type="_PIvvTbaGEe2S6c7PkQ69Iw" isOrdered="true" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_PIvvV7aGEe2S6c7PkQ69Iw" name="setQoS" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PIvvWLaGEe2S6c7PkQ69Iw" name="infr" memberEnd="_PIvvUbaGEe2S6c7PkQ69Iw _PIvvWbaGEe2S6c7PkQ69Iw">
+    <ownedEnd xmi:id="_PIvvWbaGEe2S6c7PkQ69Iw" type="_PIvvTbaGEe2S6c7PkQ69Iw" association="_PIvvWLaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvWraGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvW7aGEe2S6c7PkQ69Iw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PIvvXLaGEe2S6c7PkQ69Iw" name="Application">
+    <ownedAttribute xmi:id="_PIvvXbaGEe2S6c7PkQ69Iw" name="nameApp" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PIvvXraGEe2S6c7PkQ69Iw" name="actions" type="_PIvvY7aGEe2S6c7PkQ69Iw" association="_PIvvZLaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvX7aGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvYLaGEe2S6c7PkQ69Iw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_PIvvYbaGEe2S6c7PkQ69Iw" name="opt_algo" type="_PIvvaLaGEe2S6c7PkQ69Iw" association="_PIvvabaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvYraGEe2S6c7PkQ69Iw"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PIvvY7aGEe2S6c7PkQ69Iw" name="Action"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PIvvZLaGEe2S6c7PkQ69Iw" name="actions" memberEnd="_PIvvXraGEe2S6c7PkQ69Iw _PIvvZbaGEe2S6c7PkQ69Iw">
+    <ownedEnd xmi:id="_PIvvZbaGEe2S6c7PkQ69Iw" type="_PIvvXLaGEe2S6c7PkQ69Iw" association="_PIvvZLaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvZraGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvZ7aGEe2S6c7PkQ69Iw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PIvvaLaGEe2S6c7PkQ69Iw" name="OptimisationAlgo"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PIvvabaGEe2S6c7PkQ69Iw" name="opt_algo" memberEnd="_PIvvYbaGEe2S6c7PkQ69Iw _PIvvaraGEe2S6c7PkQ69Iw">
+    <ownedEnd xmi:id="_PIvvaraGEe2S6c7PkQ69Iw" type="_PIvvXLaGEe2S6c7PkQ69Iw" association="_PIvvabaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvva7aGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvbLaGEe2S6c7PkQ69Iw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PIvvbbaGEe2S6c7PkQ69Iw" name="app" memberEnd="_PIvvUraGEe2S6c7PkQ69Iw _PIvvbraGEe2S6c7PkQ69Iw">
+    <ownedEnd xmi:id="_PIvvbraGEe2S6c7PkQ69Iw" type="_PIvvTbaGEe2S6c7PkQ69Iw" association="_PIvvbbaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvb7aGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvcLaGEe2S6c7PkQ69Iw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PIvvcbaGEe2S6c7PkQ69Iw" name="configurations" memberEnd="_PIvvNbaGEe2S6c7PkQ69Iw _PIvvcraGEe2S6c7PkQ69Iw">
+    <ownedEnd xmi:id="_PIvvcraGEe2S6c7PkQ69Iw" type="_PIvvMbaGEe2S6c7PkQ69Iw" association="_PIvvcbaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvc7aGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvdLaGEe2S6c7PkQ69Iw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PIvvdbaGEe2S6c7PkQ69Iw" name="applications" memberEnd="_PIvvOLaGEe2S6c7PkQ69Iw _PIvvdraGEe2S6c7PkQ69Iw">
+    <ownedEnd xmi:id="_PIvvdraGEe2S6c7PkQ69Iw" type="_PIvvMbaGEe2S6c7PkQ69Iw" association="_PIvvdbaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvvd7aGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvveLaGEe2S6c7PkQ69Iw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PIvvebaGEe2S6c7PkQ69Iw" name="selectedConf" memberEnd="_PIvvO7aGEe2S6c7PkQ69Iw _PIvveraGEe2S6c7PkQ69Iw">
+    <ownedEnd xmi:id="_PIvveraGEe2S6c7PkQ69Iw" type="_PIvvMbaGEe2S6c7PkQ69Iw" association="_PIvvebaGEe2S6c7PkQ69Iw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PIvve7aGEe2S6c7PkQ69Iw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PIvvfLaGEe2S6c7PkQ69Iw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <profileApplication xmi:id="_PIvvfbaGEe2S6c7PkQ69Iw">
+    <eAnnotations xmi:id="_PIvvfraGEe2S6c7PkQ69Iw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+  </profileApplication>
+</uml:Model>
