@@ -1,4 +1,4 @@
-# Executable_Formal_Inter-DSL_Collaboration
+# Formal Inter-DSL Collaboration
 
 
 ### Modeling DSLs and their Collaboration
