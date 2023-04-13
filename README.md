@@ -15,14 +15,14 @@ In this step, the engineer builds:
 - The abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
 - The BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
 
-### Requirements
+### 1.1 Requirements
 - Download and install the Eclipse Modeling Framework using the following link (Any recent distribution should work) : <br>
  https://www.eclipse.org/downloads/packages/release/2022-12/r/eclipse-modeling-tools 
 - Launch your eclipse and install BPMN2 Modeler from the following update sites : <br>
  http://download.eclipse.org/bpmn2-modeler/updates/2020-06/1.5.2  <br>
  See the Eclipse User Guide for instructions on how to install software from update sites.
 
-### Use case Models
+### 1.2 Use case Models
 
 - The EMF metamodel of CM-DSL (Part A of Figure 4 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/CM_DSL/model/cM_DSL.ecore.uml
