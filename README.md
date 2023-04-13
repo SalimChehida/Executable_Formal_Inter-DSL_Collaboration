@@ -20,7 +20,7 @@ In this step, the engineer builds:
  https://www.eclipse.org/downloads/packages/release/2022-12/r/eclipse-modeling-tools 
 - Launch your eclipse and install BPMN2 Modeler from the following update sites : <br>
  http://download.eclipse.org/bpmn2-modeler/updates/2020-06/1.5.2  <br>
- See the Eclipse User Guide for instructions on how to install software from update sites.
+ See the [Eclipse User Guide] (https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-129.htm&cp%3D0_3_17) for instructions on how to install software from update sites.
 
 ### 1.2 Use case Models
 
