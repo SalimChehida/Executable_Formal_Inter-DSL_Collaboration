@@ -38,3 +38,31 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 
 - The BPMN model of inter-DSL collaboration (Figure 5 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/Inter_DSL_Collaboration_CM_SRA/model/collaboration_CM_SRA.bpmn
+
+## 2. Formal Specification in B language
+
+### 2.1 Requirements
+- Launch your eclipse and install B4MSecure and Meeduse from the following update sites : <br>
+-- B4MSecure: http://vasco.imag.fr/tools/b4msecure/updates/build
+--Meeduse: http://vasco.imag.fr/tools/meeduse/updates/build
+
+### 2.2 Description
+In this step, the engineer can:
+- Generate automatically a formal B specification from each DSL and the metamodel of their composition using the Meeduse framework. See the [Meeduse User Guide]( http://vasco.imag.fr/tools/meeduse/html/index.html) for more details.
+- Complete manually the execution semantics of the generated machine by specifying the B operations defining actions involved in the collaboration process. See the [Meeduse User Guide]( http://vasco.imag.fr/tools/meeduse/html/index.html) for more details.
+- Specify a CSP model from the BPMN diagram built in the previous section (this mapping is done manually. Work in progress intends to automate this transformation).
+
+### 2.3 Use case B specifications
+
+- The CM-DSL B machine (discussed in Section 4.2 in the paper) is available at:
+https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/cM_DSL.mch
+
+- The SRA-DSL B machine (discussed in Section 4.2 in the paper) is available at:
+https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/sRA_DSL.mch
+
+- DSL_Composition B machine (Figure 6 in the paper) is available at:
+https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/inter_DSL_Collaboration_CM_SRA_main.mch
+
+- The CSP model (Figure 7 in the paper) is available at:
+https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/inter_DSL_Collaboration_CM_SRA_main.csp
+
