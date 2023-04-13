@@ -66,3 +66,16 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 - The CSP model (Figure 7 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/inter_DSL_Collaboration_CM_SRA_main.csp
 
+
+## 3. Animation and Verification
+
+### 3.1 Requirements
+
+### 3.2 Description
+
+### 3.3 Use case animation scenario
+
+
+## 4. Contact
+
+* "SALIM CHEHIDA" salim.chehida@univ-grenoble-alpes.fr
