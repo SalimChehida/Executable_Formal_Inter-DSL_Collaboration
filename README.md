@@ -43,8 +43,8 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 
 ### 2.1 Requirements
 - Launch your eclipse and install B4MSecure and Meeduse from the following update sites : <br>
--- B4MSecure: http://vasco.imag.fr/tools/b4msecure/updates/build
---Meeduse: http://vasco.imag.fr/tools/meeduse/updates/build
+ - B4MSecure: http://vasco.imag.fr/tools/b4msecure/updates/build
+ -Meeduse: http://vasco.imag.fr/tools/meeduse/updates/build
 
 ### 2.2 Description
 In this step, the engineer can:
@@ -54,15 +54,15 @@ In this step, the engineer can:
 
 ### 2.3 Use case B specifications
 
-- The CM-DSL B machine (discussed in Section 4.2 in the paper) is available at:
+- The CM-DSL B machine (discussed in Section 4.2 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/cM_DSL.mch
 
-- The SRA-DSL B machine (discussed in Section 4.2 in the paper) is available at:
+- The SRA-DSL B machine (discussed in Section 4.2 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/sRA_DSL.mch
 
-- DSL_Composition B machine (Figure 6 in the paper) is available at:
+- DSL_Composition B machine (Figure 6 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/inter_DSL_Collaboration_CM_SRA_main.mch
 
-- The CSP model (Figure 7 in the paper) is available at:
+- The CSP model (Figure 7 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/inter_DSL_Collaboration_CM_SRA_main.csp
 
