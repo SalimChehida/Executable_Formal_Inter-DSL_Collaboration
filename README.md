@@ -16,28 +16,21 @@ In this step, the engineer builds:
 - The BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
 
 ### Requirements
-- Download and install the Eclipse Modeling Framework <br>
+- Download and install the Eclipse Modeling Framework : <br>
  https://www.eclipse.org/downloads/packages/release/2022-12/r/eclipse-modeling-tools 
-- Download and install the BPMN2 Modeler
-https://www.eclipse.org/bpmn2-modeler/downloads.php
-
-The following Update Sites is used: http://download.eclipse.org/bpmn2-modeler/updates/2020-06/1.5.2
+- Download and install the BPMN2 Modeler Update Sites : <br>
+ http://download.eclipse.org/bpmn2-modeler/updates/2020-06/1.5.2
 
 ### Use case Models
 
-- The EMF metamodel of CM-DSL (Part A of Figure 4 in the paper) is available at:
-- 
+- The EMF metamodel of CM-DSL (Part A of Figure 4 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/CM_DSL/model/cM_DSL.ecore.uml
 
-- The EMF metamodel of SRA-DSL (Part B of Figure 4) is available at:
-- 
+- The EMF metamodel of SRA-DSL (Part B of Figure 4) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/SRA_DSL/model/sRA_DSL.ecore
 
-- The composition metamodel of SRA-DSL and CM-DSL (Part C of Figure 4) is available at:
-
+- The composition metamodel of SRA-DSL and CM-DSL (Part C of Figure 4) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/Inter_DSL_Collaboration_CM_SRA/model/inter_DSL_Collaboration_CM_SRA.ecore
 
-- The BPMN model of inter-DSL collaboration (Figure 5 in the paper) is available at:
-
+- The BPMN model of inter-DSL collaboration (Figure 5 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/Inter_DSL_Collaboration_CM_SRA/model/collaboration_CM_SRA.bpmn
-
