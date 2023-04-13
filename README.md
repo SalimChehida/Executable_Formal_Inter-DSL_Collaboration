@@ -16,8 +16,8 @@ In this step, the engineer builds:
 - The BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
 
 ### Requirements
-- Download and install the Eclipse Modeling Framework
--  https://www.eclipse.org/downloads/packages/release/2022-12/r/eclipse-modeling-tools 
+- Download and install the Eclipse Modeling Framework <br>
+ https://www.eclipse.org/downloads/packages/release/2022-12/r/eclipse-modeling-tools 
 - Download and install the BPMN2 Modeler
 https://www.eclipse.org/bpmn2-modeler/downloads.php
 
