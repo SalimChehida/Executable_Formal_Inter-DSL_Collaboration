@@ -49,7 +49,7 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 ### 2.2 Description
 In this step, the engineer can:
 - Generate automatically a formal B specification from each DSL and the metamodel of their composition using the Meeduse framework. See the [Meeduse User Guide]( http://vasco.imag.fr/tools/meeduse/html/index.html) for more details.
-- Complete manually the execution semantics of the generated machine by specifying the B operations defining actions involved in the collaboration process. See the [Meeduse User Guide]( http://vasco.imag.fr/tools/meeduse/html/index.html) for more details.
+- Complete manually the execution semantics of the generated machine by specifying the B operations defining actions involved in the collaboration process, and also invariant properties. See the [Meeduse User Guide]( http://vasco.imag.fr/tools/meeduse/html/index.html) for more details.
 - Specify a CSP model from the BPMN diagram built in the previous section (this mapping is done manually. Work in progress intends to automate this transformation).
 
 ### 2.3 Use case B specifications
