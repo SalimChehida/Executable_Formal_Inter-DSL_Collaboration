@@ -43,8 +43,8 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 
 ### 2.1 Requirements
 - Launch your eclipse and install B4MSecure and Meeduse from the following update sites : <br>
- - B4MSecure: http://vasco.imag.fr/tools/b4msecure/updates/build
- - Meeduse: http://vasco.imag.fr/tools/meeduse/updates/build
+  - B4MSecure: http://vasco.imag.fr/tools/b4msecure/updates/build
+  - Meeduse: http://vasco.imag.fr/tools/meeduse/updates/build
 
 ### 2.2 Description
 In this step, the engineer can:
