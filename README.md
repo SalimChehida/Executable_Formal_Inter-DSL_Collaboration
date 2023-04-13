@@ -11,9 +11,6 @@ The proposed approach, supported with a formal framework, allows engineers to de
 We applied the proposed approach to a smart grid case study provided by RTE, the energy transmission company in France. The case study involves two DSLs: the first one, named CM-DSL (Configuration Management DSL), focuses on the management of system configurations assigning to a set of applications various infrastructures. The second one named SRA-DSL (Security Risk Assessment DSL), is dedicated to security risk assessment. The composition and the collaboration of these DSLs allow to manage configurations while dealing with security concerns.
 
 ## 1.  Modeling DSLs and their Collaboration
-In this step, the engineer builds:
-- The abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
-- The BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
 
 ### 1.1 Requirements
 - Download and install the Eclipse Modeling Framework using the following link (Any recent distribution should work) : <br>
@@ -21,8 +18,14 @@ In this step, the engineer builds:
 - Launch your eclipse and install BPMN2 Modeler from the following update sites : <br>
  http://download.eclipse.org/bpmn2-modeler/updates/2020-06/1.5.2  <br>
  See the [Eclipse User Guide](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-129.htm&cp%3D0_3_17) for instructions on how to install software from update sites.
+ 
+ ### 1.2 Description
+In this step, the engineer builds:
+- The abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
+- The BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
 
-### 1.2 Use case Models
+
+### 1.3 Use case Models
 
 - The EMF metamodel of CM-DSL (Part A of Figure 4 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/CM_DSL/model/cM_DSL.ecore.uml
