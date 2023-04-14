@@ -49,6 +49,9 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 - The composition metamodel of SRA-DSL and CM-DSL (Part C of Figure 4) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/Inter_DSL_Collaboration_CM_SRA/model/inter_DSL_Collaboration_CM_SRA.ecore
 
+- The composition model is available at: <br>
+https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Models/comp_CM_SRA/My.inter_dsl_collaboration_cm_sra
+
 - The BPMN model of inter-DSL collaboration (Figure 5 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/Inter_DSL_Collaboration_CM_SRA/model/collaboration_CM_SRA.bpmn
 
@@ -69,6 +72,8 @@ In this step, the engineer can:
 - Specify a CSP model from the BPMN diagram built in the previous section (this mapping is done manually. Work in progress intends to automate this transformation).
 
 ### 2.3 Use case B specifications
+
+Below the git links of the formal specifications generated from models and metamodels of the smart grid use case :
 
 - The CM-DSL B machine (discussed in Section 4.2 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/cM_DSL.mch
