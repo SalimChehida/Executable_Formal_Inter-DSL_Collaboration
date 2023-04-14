@@ -32,7 +32,7 @@ In this step, the engineer builds:
 
 #### 1.3.1 Models code source in GIT
 
-Below the git links of the models and metamodels from the smart grid use case :
+Below the Git links of the models and metamodels from the smart grid use case :
 
 - The EMF metamodel of CM-DSL (Part A of Figure 4 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/CM_DSL/model/cM_DSL.ecore.uml
@@ -78,7 +78,7 @@ In this step, the engineer can:
 
 ### 2.3 Use case B specifications
 
-Below the git links of the formal specifications generated from the models and metamodels of the smart grid use case :
+Below the Git links of the formal specifications generated from the models and metamodels of the smart grid use case :
 
 - The CM-DSL B machine (discussed in Section 4.2 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/cM_DSL.mch
