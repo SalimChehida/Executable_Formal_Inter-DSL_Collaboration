@@ -74,7 +74,7 @@ In this step, the engineer can:
 - Complete manually the execution semantics of the generated machine by specifying the B operations defining actions involved in the collaboration process, and also invariant properties. 
 - Inject the model ...
   - See the [Meeduse User Guide]( http://vasco.imag.fr/tools/meeduse/html/index.html) for more details.
-- Specify a CSP model from the BPMN diagram built in the previous section (this mapping is done manually. Work in progress intends to automate this transformation).
+- Specify a CSP model from the BPMN diagram built in the previous section (This mapping is done manually, but work in progress intends to automate this transformation).
 
 ### 2.3 Use case B specifications
 
