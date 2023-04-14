@@ -116,7 +116,7 @@ The following Figure presents example of the animation of the [composition B mac
 
 ![alt text]( https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/9e5dc7d3bb2e40adc3735990be1b8285668e95a4/DSLs_Formal_Specification/anim.jpg)
 
-- The History window shows an execution scenario example animated using the ProB tool.   
+- The History window shows an execution scenario example animated using the ProB tool.    
 
 - The Enabled Operations window lists operations that can be called at this stage and whose execution will satisfy their precondition, and therefore preserve the state invariant. 
 
