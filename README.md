@@ -109,7 +109,7 @@ The CSP file should define a process called "MAIN". This process will be execute
 
 ### 3.3 Use case animation scenario
 
-The following Figure presents example of the animation of the composition B machine of Figure 6 in the paper guided by the CSP model of Figure 7 in the paper. 
+The following Figure presents example of the animation of the [composition B machine](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/inter_DSL_Collaboration_CM_SRA_main.mch) of Figure 6 in the paper guided by the [CSP model](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/inter_DSL_Collaboration_CM_SRA_main.csp) of Figure 7 in the paper. 
 
 ![alt text]( https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/9e5dc7d3bb2e40adc3735990be1b8285668e95a4/DSLs_Formal_Specification/anim.jpg)
 
