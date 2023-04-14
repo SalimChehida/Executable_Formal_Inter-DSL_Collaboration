@@ -1,46 +1,81 @@
-datatype CM = CM_AS1 | Name
-datatype CONFIGURATION = CONFIGURATION1 | CONFIGURATION2 |	CONFIGURATION3
+{----------------------------------------------------------
+Data types used to type channels, must correspond to B sets
+-----------------------------------------------------------}
+
+datatype CM=CM_AS1
+datatype CONFIGURATION=CONFIGURATION1 | CONFIGURATION2 |	CONFIGURATION3
 datatype DEFENSE = DEFENSE1 |	DEFENSE2 | 	DEFENSE3 | 	DEFENSE4 |	DEFENSE5
-datatype SRA = SRA_AS1 
+datatype SRA = SRA_AS1
 
-channel selectConfig, setQoS, validateConfig
-channel selectedConf : CONFIGURATION
 
+{--------------------------------
+Operations and variables from CM
+---------------------------------}
+channel selectConfig, setQoS
+channel validateConfig : CONFIGURATION
+
+
+{------------------
+Operations from SRA
+-------------------}
 channel initSRA, selectThreat
 channel computeDefenses : Set(DEFENSE)
 
+
+{--------------------------
+Operations from Composition
+---------------------------}
 channel createSecureConfig : CONFIGURATION
 channel affectValidDefenses : Set(DEFENSE)
 channel approveSecureConfig
 
-channel ConfigurationRequest
-channel ConfigurationConfirmation
-channel SRARequest
-channel SRAConfirmation  : Set(DEFENSE)
+{------------
+Messages without data
+-------------}
+channel ConfigurationRequest, SRARequest
 
-MAIN =  CM_DSL  
-			[|{|ConfigurationRequest,ConfigurationConfirmation|}|]
-		DSL_COMPOSITION   
-			[|{| SRARequest,SRAConfirmation |}|]  
-		SRA_DSL
+{------------
+Messages with data
+-------------}
+channel ValidConfig : CONFIGURATION
+channel ValidDefenses  : Set(DEFENSE)
+
+
+MAIN =   
+	CM_DSL  [|{|ConfigurationRequest, ValidConfig|}|]  
+	DSL_COMPOSITION   
+	[|{| SRARequest, ValidDefenses |}|]  SRA_DSL
 
 DSL_COMPOSITION = 
-	(ConfigurationRequest -> ConfigurationConfirmation -> selectedConf?cm?conf  
-	-> createSecureConfig!conf -> SRARequest -> SRAConfirmation?defenses 
-	-> EVALUATE_SECURE_CONFIGURATION (defenses) ; DSL_COMPOSITION)
+	ConfigurationRequest -> ValidConfig?conf  -> createSecureConfig!conf 
+	-> SRARequest -> ValidDefenses?defenses -> EVALUATE_SECURE_CONFIGURATION (defenses) 
+	; DSL_COMPOSITION
 
-EVALUATE_SECURE_CONFIGURATION(defenses) = affectValidDefenses!defenses -> (approveSecureConfig -> SKIP [] SKIP)
+EVALUATE_SECURE_CONFIGURATION(defenses) = 
+	affectValidDefenses!defenses -> (approveSecureConfig -> SKIP [] SKIP)
 
-CM_DSL = ( ConfigurationRequest -> IDENTIFY_CONFIGURATION ; CM_DSL )
-IDENTIFY_CONFIGURATION 	=  selectConfig -> setQoS -> validateConfig -> ConfigurationConfirmation -> SKIP
 
-SRA_DSL = (SRARequest -> COMPUTE_CONFIGURATION_DEFENSES ; SRA_DSL)
+{------------
+Translation of CM_DSL Pool
+-------------}
+
+CM_DSL = 
+	ConfigurationRequest  -> IDENTIFY_CONFIGURATION ; CM_DSL
+
+IDENTIFY_CONFIGURATION 	=  
+	selectConfig -> setQoS -> validateConfig?conf -> ValidConfig!conf -> SKIP
+
+{------------
+Translation of SRA_DSL Pool
+-------------}
+
+SRA_DSL = 
+	SRARequest -> COMPUTE_CONFIGURATION_DEFENSES ; SRA_DSL
 
 COMPUTE_CONFIGURATION_DEFENSES = 
-	(initSRA -> SELECT_THREADS ; computeDefenses?sra?defenses -> SRAConfirmation!defenses -> SKIP)
-	
-SELECT_THREADS = ( selectThreat -> SELECT_THREADS []  SKIP )
-
+	initSRA -> SELECT_THREATS ; computeDefenses?defenses -> ValidDefenses!defenses -> SKIP
+SELECT_THREATS = 
+	selectThreat -> SELECT_THREATS []  SKIP
 
 
 

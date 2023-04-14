@@ -88,7 +88,7 @@ OPERATIONS
 	createSecureConfig(aConfig, qos, cost) = 
 	PRE	
 		aConfig : Configuration & isValid(aConfig) = TRUE 
-		& qos : REAL & qos : {2.0, 3.0, 4.0}
+		& qos : REAL & qos : {3.0, 4.0}
 		& cost : REAL & cost : {0.3, 0.5, 0.6}
 	THEN 
 	    ANY sc WHERE
