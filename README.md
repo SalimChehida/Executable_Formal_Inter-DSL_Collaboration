@@ -6,9 +6,9 @@ This directory provides the several assets of our approach for inter-DSL collabo
 
 - Salim Chehida, Akram Idani, Mario Cortes-Cornax and German Vega " An Executable Formal Framework for Inter-DSL Collaboration", accepted at the conference COORDINATION 2023.
 
-The proposed approach, supported with a formal framework, allows engineers to define how DSLs collaborate with each others. In our approach, the Model-driven engineer specifies the DSLs metamodels and the BPMN models of their collaboration. Then the metamodels and BPMN diagrams are transformed into B and CSP respectively, while integrating the system properties. Afterwards, the operator can animate the formal specifications while observing the respect of the properties.
+The proposed approach, supported with a formal framework, allows engineers to define how DSLs collaborate with each others. In our approach, the Model-driven engineer specifies the DSLs metamodels and the BPMN models of their collaboration. Then, the metamodels and BPMN diagrams are transformed into B and CSP respectively, while integrating the system properties. Afterwards, the operator can animate the formal specifications while observing the respect of the properties.
 
-We applied the proposed approach to a smart grid case study provided by RTE, the energy transmission company in France. The case study involves two DSLs: the first one, named CM-DSL (Configuration Management DSL), focuses on the management of system configurations assigning to a set of applications various infrastructures. The second one named SRA-DSL (Security Risk Assessment DSL), is dedicated to security risk assessment. The composition and the collaboration of these DSLs allow to manage configurations while dealing with security concerns.
+We applied the proposed approach to a smart grid case study provided by RTE, the energy transmission company in France. The case study involves two DSLs: the first one, named CM-DSL (Configuration Management DSL), focuses on the management of system configurations assigning to a set of applications various infrastructures. The second one, named SRA-DSL (Security Risk Assessment DSL), is dedicated to security risk assessment. The composition and the collaboration of these DSLs allow to manage configurations while dealing with security concerns.
 
 ## 1.  Modeling DSLs and their Collaboration
 
@@ -17,15 +17,19 @@ We applied the proposed approach to a smart grid case study provided by RTE, the
  https://www.eclipse.org/downloads/packages/release/2022-12/r/eclipse-modeling-tools 
 - Launch your eclipse and install BPMN2 Modeler from the following update sites : <br>
  http://download.eclipse.org/bpmn2-modeler/updates/2020-06/1.5.2  <br>
- See the [Eclipse User Guide](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-129.htm&cp%3D0_3_17) for instructions on how to install software from update sites.
+  - Select "Install New Software..." of the Help menu, then add the update sites URL and complete the installation. 
+  - See the [Eclipse User Guide](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-129.htm&cp%3D0_3_17) for instructions on how to install software from update sites.
  
  ### 1.2 Description
 In this step, the engineer builds:
 - The abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
+  - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodel.
 - The BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
-
+  - See the [Eclipse BPMN2 Modeler User Guide]([https://www.vogella.com/tutorials/EclipseEMF/article.html](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf)) for informations on how to create BPMN diagrams.
 
 ### 1.3 Use case Models
+
+#### 1.3.1 Models code source in GIT
 
 - The EMF metamodel of CM-DSL (Part A of Figure 4 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/CM_DSL/model/cM_DSL.ecore.uml
@@ -39,13 +43,16 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 - The BPMN model of inter-DSL collaboration (Figure 5 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/Inter_DSL_Collaboration_CM_SRA/model/collaboration_CM_SRA.bpmn
 
+#### 1.3.2 Open the Models in Eclipce
+
+
 ## 2. Formal Specification in B language
 
 ### 2.1 Requirements
 - Launch your eclipse and install B4MSecure and Meeduse from the following update sites : <br>
   - B4MSecure: http://vasco.imag.fr/tools/b4msecure/updates/build
-  - Meeduse: http://vasco.imag.fr/tools/meeduse/updates/build
-
+  - Meeduse: http://vasco.imag.fr/tools/meeduse/updates/build : <br>
+See the [Eclipse User Guide](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-129.htm&cp%3D0_3_17) for instructions on how to install software from update sites.
 ### 2.2 Description
 In this step, the engineer can:
 - Generate automatically a formal B specification from each DSL and the metamodel of their composition using the Meeduse framework. See the [Meeduse User Guide]( http://vasco.imag.fr/tools/meeduse/html/index.html) for more details.
