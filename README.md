@@ -119,7 +119,7 @@ The following Figure presents example of the animation of the composition B mach
 
 - The State Properties window provides the current value of each state variable of the composition machine. 
 
-## 4. Contact
+## 4. Contact 
 
 "SALIM CHEHIDA" salim.chehida@univ-grenoble-alpes.fr
   
