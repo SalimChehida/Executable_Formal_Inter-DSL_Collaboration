@@ -23,7 +23,8 @@ See the [Eclipse User Guide](https://help.eclipse.org/latest/index.jsp?topic=%2F
  ### 1.2 Description
 In this step, the engineer builds:
 - The abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
-  - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodel.
+- Create models (instances) that conform to the DSL metamodels.
+  - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodels and models.
 - The BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
   - See the [Eclipse BPMN2 Modeler User Guide](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf) for informations on how to create BPMN diagrams.
 
@@ -31,11 +32,19 @@ In this step, the engineer builds:
 
 #### 1.3.1 Models code source in GIT
 
+Below the git links of the models and metamodels from the smart grid use case :
+
 - The EMF metamodel of CM-DSL (Part A of Figure 4 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/CM_DSL/model/cM_DSL.ecore.uml
 
+- The CM-DSL model (Figure 1 in the paper) is available at: <br>
+https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Models/CM_Model/My.cm_dsl
+
 - The EMF metamodel of SRA-DSL (Part B of Figure 4) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/SRA_DSL/model/sRA_DSL.ecore
+
+- The SRA-DSL model (Figure 2 in the paper) is available at: <br>
+https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Models/SRA_Model/My.sra_dsl
 
 - The composition metamodel of SRA-DSL and CM-DSL (Part C of Figure 4) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/Inter_DSL_Collaboration_CM_SRA/model/inter_DSL_Collaboration_CM_SRA.ecore
@@ -43,7 +52,7 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 - The BPMN model of inter-DSL collaboration (Figure 5 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/Inter_DSL_Collaboration_CM_SRA/model/collaboration_CM_SRA.bpmn
 
-#### 1.3.2 Open the Models in Eclipce
+#### 1.3.2 Open the Models in Eclipse
 
 
 ## 2. Formal Specification in B language
