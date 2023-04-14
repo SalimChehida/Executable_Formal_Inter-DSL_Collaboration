@@ -106,5 +106,5 @@ The following Figure presents example of the animation of the composition B mach
 ## 4. Contact
 
 "SALIM CHEHIDA" salim.chehida@univ-grenoble-alpes.fr
- 
+  
 
