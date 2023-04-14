@@ -25,7 +25,7 @@ In this step, the engineer builds:
 - The abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
   - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodel.
 - The BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
-  - See the [Eclipse BPMN2 Modeler User Guide]([https://www.vogella.com/tutorials/EclipseEMF/article.html](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf) for informations on how to create BPMN diagrams.
+  - See the [Eclipse BPMN2 Modeler User Guide](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf) for informations on how to create BPMN diagrams.
 
 ### 1.3 Use case Models
 
