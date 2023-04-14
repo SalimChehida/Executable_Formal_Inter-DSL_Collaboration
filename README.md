@@ -55,8 +55,11 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 - The BPMN model of inter-DSL collaboration (Figure 5 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/Inter_DSL_Collaboration_CM_SRA/model/collaboration_CM_SRA.bpmn
 
-#### 1.3.2 Open the Models in Eclipse
-
+#### 1.3.2 Open the DSL metamodels and models in Eclipse
+- Open Eclipse and choose Import –> Projects from Git (with smart import) 
+- Choose the Clone URI option in the Git import wizard and click Next. 
+- Confirm the URI, Host and Repository path parameters and click Next. 
+- Choose the Git branches to clone from the remote repository and click Next.
 
 ## 2. Formal Specification in B language
 
