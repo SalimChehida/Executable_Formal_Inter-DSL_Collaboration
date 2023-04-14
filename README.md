@@ -103,7 +103,7 @@ The B specifications and CSP model generated from the DSL models, metamodels and
 
 In this step, we use “Guiding B Machines with CSP” feature of ProB to animate step-by-step the operations of DSL_composition B machine. We refer to the CSP||B approach to marry CSP and B such that the execution of a B operation corresponds to an event that can be enabled in CSP, which provides a guidance all along the animation process.
 
-To use this feature of ProB: first open a B Machine, then select "Use CSP File to Guide B..." or "Use Default CSP File" in the "Open Special" submenu of the File menu (you must be in normal user mode to see it).
+To use this feature of ProB: first open a B Machine, then select "Use Default CSP File" in the "Open Special" submenu of the File menu (you must be in normal user mode to see it).
 
 The CSP file should define a process called "MAIN". This process will be executed in parallel with the B machine. The B machine and the CSP process must synchronise on common events, that is, an operation can only happen in the combined system when it is allowed both by the B and the CSP.
 
