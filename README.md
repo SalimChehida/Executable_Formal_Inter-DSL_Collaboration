@@ -32,7 +32,7 @@ In this step, the engineer builds:
 
 #### 1.3.1 Models code source in GIT
 
-Below the git links of the models and metamodels from the smart grid use case :
+Below the Git links of the models and metamodels from the smart grid use case :
 
 - The EMF metamodel of CM-DSL (Part A of Figure 4 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/CM_DSL/model/cM_DSL.ecore.uml
@@ -72,13 +72,13 @@ See the [Eclipse User Guide](https://help.eclipse.org/latest/index.jsp?topic=%2F
 In this step, the engineer can:
 - Generate automatically a formal B specification from each DSL and the metamodel of their composition using the Meeduse framework. 
 - Complete manually the execution semantics of the generated machine by specifying the B operations defining actions involved in the collaboration process, and also invariant properties. 
-- Inject the model ...
-  - See the [Meeduse User Guide]( http://vasco.imag.fr/tools/meeduse/html/index.html) for more details.
+- Inject the models instance of the metamodels into the DSLs B machines.
+  - See the [Meeduse User Guide]( http://vasco.imag.fr/tools/meeduse/html/index.html) for more details about the 3 previous steps.
 - Specify a CSP model from the BPMN diagram built in the previous section (This mapping is done manually, but work in progress intends to automate this transformation).
 
 ### 2.3 Use case B specifications
 
-Below the git links of the formal specifications generated from models and metamodels of the smart grid use case :
+Below the Git links of the formal specifications generated from the models and metamodels of the smart grid use case :
 
 - The CM-DSL B machine (discussed in Section 4.2 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/cM_DSL.mch
