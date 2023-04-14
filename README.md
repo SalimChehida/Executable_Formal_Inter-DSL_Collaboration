@@ -17,15 +17,15 @@ We applied the proposed approach to a smart grid case study provided by RTE, the
  https://www.eclipse.org/downloads/packages/release/2022-12/r/eclipse-modeling-tools 
 - Launch your eclipse and install BPMN2 Modeler from the following update sites : <br>
  http://download.eclipse.org/bpmn2-modeler/updates/2020-06/1.5.2  <br>
-  - Select "Install New Software..." of the Help menu, then add the update sites URL and complete the installation. 
-  - See the [Eclipse User Guide](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-129.htm&cp%3D0_3_17) for instructions on how to install software from update sites.
+  - Select "Install New Software..." of the Help menu, then add the update sites URL and complete the installation. <br>
+See the [Eclipse User Guide](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-129.htm&cp%3D0_3_17) for instructions on how to install software from update sites.
  
  ### 1.2 Description
 In this step, the engineer builds:
 - The abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
   - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodel.
 - The BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
-  - See the [Eclipse BPMN2 Modeler User Guide]([https://www.vogella.com/tutorials/EclipseEMF/article.html](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf)) for informations on how to create BPMN diagrams.
+  - See the [Eclipse BPMN2 Modeler User Guide]([https://www.vogella.com/tutorials/EclipseEMF/article.html](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf) for informations on how to create BPMN diagrams.
 
 ### 1.3 Use case Models
 
