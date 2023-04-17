@@ -113,7 +113,7 @@ The CSP file should define a process called "MAIN". This process will be execute
 
 The following Figure presents example of the animation of the [composition B machine](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/inter_DSL_Collaboration_CM_SRA_main.mch) of Figure 6 in the paper guided by the [CSP model](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/inter_DSL_Collaboration_CM_SRA_main.csp) of Figure 7 in the paper. 
 
-- Tu run the animation, Open [composition B machine](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/inter_DSL_Collaboration_CM_SRA_main.mch), then select File/Open Special/Use Default CSP.
+- Tu run the animation, Open [composition B machine](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/inter_DSL_Collaboration_CM_SRA_main.mch), then select File menu/Open Special/Use Default CSP.
 
 ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/9d0eee89a2931846ae8b9393e1dea550d2151b02/DSLs_Formal_Specification/anim.jpg)
 
