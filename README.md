@@ -63,7 +63,7 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 #### 2.2.2 Open the DSL metamodels and models in Eclipse
 - Open Eclipse and choose Import –> Projects from Git (with smart import) 
 - Choose the Clone URI option in the Git import wizard and click Next. 
-- Confirm the URI, Host and Repository path parameters and click Next. 
+- Confirm the [URI](https://github.com/SalimChehida/Inter-DSL-Collaboration.git), Host and Repository path parameters and click Next. 
 - Choose the Git branches to clone from the remote repository and click Next.
 
 ## 3. Formal Specification in B language
