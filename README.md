@@ -46,7 +46,7 @@ In this step, the engineer can:
   
   - In the following Figure, we give example of creating SRA DSL model. 
   
-  - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/58459f7db3d6bf7576d632f61a02c27168282608/DSLs_Modeling/metamodels.jpg)
+  - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/1fa37765d23e4834a4ecf907840999576b5e3e75/DSLs_Modeling/models.jpg)
 
   - Use right click in root metaclass (eg. SRA) to create new child (eg. Threat or Defense)
   
