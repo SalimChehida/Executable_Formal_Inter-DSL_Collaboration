@@ -137,6 +137,8 @@ Process ::= SKIP /* terminating process */<br>
 | ch -> Process /* simple action prefix where ch is a channel */<br> 
 | Process ; Process /* sequential composition */<br> 
 | Process [] Process /* external choice */<br> 
+  - The following specifies the BPMN collaboration model of SRA DSL and CM DSL from our use case into CSP.
+    ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/148b58d638469dcebd376ab1400fde76cbae0a01/DSLs_Formal_Specification/inject.jpg)
 
 ### 3.2 Use case B specifications
 
