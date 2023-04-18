@@ -27,7 +27,7 @@ https://prob.hhu.de/w/index.php?title=Download
 
 ### 2.1 Description
 In this step, the engineer can:
-1. Build the abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
+- Build the abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
   - EcoreTools provide a wizard setting up your Ecore project. Click on File->New->Others... and then select Ecore Modeling Project.
   - Give a name for the project and the DSL metamodel. A subfolder named model will be created. It includes two files (.ecore) and (.aird).
   - Open the (.aird) file (for the graphical representation) and start the design using the Palette at the right (add classes, relations, etc.)
