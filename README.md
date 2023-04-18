@@ -126,6 +126,17 @@ In this step, the engineer can:
   - See the [Meeduse User Guide](http://vasco.imag.fr/tools/meeduse/html/index.html) for more details about the 3 previous steps.
 
 - 4) Specify a CSP model from the BPMN diagram built in the previous section (This mapping is done manually, but work in progress intends to automate this transformation).
+  - In CSP, a process represents an independent entity that performs a sequence of events, which is similar to the notion of pool in BPMN. Communication
+between processes is ensured via channels, that may or not transmit data flows; we use then this notion to represent exchanged messages between pools as well
+as atomic tasks of the BPMN model.
+  - To transform the BPMN collaboration model we first transform pools leading to independent CSP processes, and then we produce a
+main process to synchronize them being guided by the messages exchanged by the pools. Note that by convention, processes are named in uppercase
+and channels in lowercase. 
+  - The used CSP constructs are: <br> 
+Process ::= SKIP /* terminating process */<br> 
+| ch -> Process /* simple action prefix where ch is a channel */<br> 
+| Process ; Process /* sequential composition */<br> 
+| Process [] Process /* external choice */<br> 
 
 ### 3.2 Use case B specifications
 
