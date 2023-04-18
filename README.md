@@ -33,7 +33,7 @@ In this step, the engineer can:
   - Open the (.aird) file (for the graphical representation) and start the design using the Palette at the right the IDE windows (add classes, relations, etc.).
   - The following Figure presents example of the specification of SRA DSL metamodel from our use case with the EcoreTools. 
   
-  - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/58459f7db3d6bf7576d632f61a02c27168282608/DSLs_Modeling/metamodels.jpg)
+   ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/58459f7db3d6bf7576d632f61a02c27168282608/DSLs_Modeling/metamodels.jpg)
   
   - The DSL concepts are represented by a metamodel. The different meta-classes (eg. SRA) of the metamodel are characterized by a set of attributes (eg. nameSRAM) and operations (eg. selectThreat), related by a set of associations (eg. defenses).
   - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodels.
@@ -46,7 +46,7 @@ In this step, the engineer can:
   
   - In the following Figure, we give example of creating SRA DSL model from our use case. 
   
-  - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/1fa37765d23e4834a4ecf907840999576b5e3e75/DSLs_Modeling/models.jpg)
+   ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/1fa37765d23e4834a4ecf907840999576b5e3e75/DSLs_Modeling/models.jpg)
 
   - Use right click in root metaclass (eg. SRA) to create new child (eg. Threat or Defense)
   
@@ -59,7 +59,7 @@ In this step, the engineer can:
   
    - In the following Figure, we give example of creating a BPMN collaboration model of SRA DSL and CM DSL from our use case. 
    
-   - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/29ebb0c5823c63f6831af9b608e0390ea9730238/DSLs_Modeling/bpmn.jpg)
+    ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/29ebb0c5823c63f6831af9b608e0390ea9730238/DSLs_Modeling/bpmn.jpg)
    
    - See the [Eclipse BPMN2 Modeler User Guide](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf) for informations on how to create BPMN diagrams.
 
@@ -106,7 +106,7 @@ In this step, the engineer can:
   - Right click on your metamodel (Ecore file (.ecore)) and select "Meeduse: Extract B models".
   - In the following, we generate a B specification from SRA DSL metamodel.
   
-  - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/2876ff25c30d06f5021953bf052f40d893194cc0/DSLs_Formal_Specification/genB.jpg)
+   ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/2876ff25c30d06f5021953bf052f40d893194cc0/DSLs_Formal_Specification/genB.jpg)
   
   - Three files are extracted: sRA_DSL.ecore.uml (an extraction of a UML model from the ECore file), sRA_DSL.ecore.bmethod (an instance of a B meta-model, extracted from the UML model), and  sRA_DSL.mch (a B specfication defining the static semantics of your DSL represented by sets, variables and typing invariants that define the structural features of the metamodel).
 
@@ -114,11 +114,17 @@ In this step, the engineer can:
   - Create in folder "model", a new file named sRA_DSL_main.mch. It is important to keep the files inside folder "model". They must be located in the same folder as the Ecore file.
   - File "sRA_DSL_main.mch" defines the operational semantics of the DSL. The following specifies the operations : selectThreat, computeDefenses, and initSRA.
  
- - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/1fa37765d23e4834a4ecf907840999576b5e3e75/DSLs_Modeling/models.jpg)
+  ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/f85f6d44fd7d3755d856948b3dd49054e751286b/DSLs_Formal_Specification/operation.jpg)
 
 - 3) Inject the models instance of the metamodels into the DSLs B machines.
+
+  - Launch runtime Eclipse. 
+  -> Right click on the root object of your model (object SRA) and select execute model then abstract behaviour.
+  -> Select "Generated injected machine" then click Finish. This will generate the final machine with the valuation of the B abstract sets and the initialisation of B variables.
+    ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/f85f6d44fd7d3755d856948b3dd49054e751286b/DSLs_Formal_Specification/operation.jpg)
   
-  -> See the [Meeduse User Guide](http://vasco.imag.fr/tools/meeduse/html/index.html) for more details about the 3 previous steps.
+  - See the [Meeduse User Guide](http://vasco.imag.fr/tools/meeduse/html/index.html) for more details about the 3 previous steps.
+
 - 4) Specify a CSP model from the BPMN diagram built in the previous section (This mapping is done manually, but work in progress intends to automate this transformation).
 
 ### 3.2 Use case B specifications
