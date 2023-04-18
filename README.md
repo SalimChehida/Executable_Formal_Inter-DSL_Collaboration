@@ -187,5 +187,5 @@ The following Figure presents example of the animation of the [composition B mac
 
 ## 5. Contact 
 "SALIM CHEHIDA" salim.chehida@univ-grenoble-alpes.fr
-  
+   
 
