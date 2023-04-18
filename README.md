@@ -26,21 +26,29 @@ https://prob.hhu.de/w/index.php?title=Download
 ## 2.  Modeling DSLs and their Collaboration
 
 ### 2.1 Description
-In this step, the engineer builds:
-- The abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
+In this step, the engineer can:
+- Build the abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
+  - EcoreTools provide a wizard setting up your Ecore project. Click on File->New->Others... and then select Ecore Modeling Project.
+  - Give a name for the project and the DSL metamodel. A subfolder will be created with two files (.ecore) and (.aird)
+  - Open the (.aird) file (for the graphical representation) and start the design using the Palette at the right (add classes, relations, etc;)
   - The following Figure presents example of the specification of SRA DSL metamodel from our use case with the EcoreTools. 
+  
   ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/58459f7db3d6bf7576d632f61a02c27168282608/DSLs_Modeling/metamodels.jpg)
   
-  - The DSL concepts are represented by a metamodel. The different meta-classes (eg.) of the metamodel are characterized by a set of attributes (eg.) and operations (eg.), related by a set of associations (eg.).
-  - EcoreTools provide a wizard setting up your Ecore project. Click on File->New->Others... and then select Ecore Modeling Project.
-
+  - The DSL concepts are represented by a metamodel. The different meta-classes (eg. SRA) of the metamodel are characterized by a set of attributes (eg. nameSRAM) and operations (eg. selectThreat), related by a set of associations (eg. defenses).
   - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodels.
 
 
 - Create models (instances) that conform to the DSL metamodels.
-  - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodels and models.
+  - Launch a "runtime" of an "Eclipse application" (A standardized model to describe diagram elements, which separates between the semantic (domain) and notation (diagram) elements.). <br> 
+  -> In the Ecore Project, click Run Application (the "play" icon) in the toolbar or select Run › Run in the menu. <br> 
+  -> Use the EcoreTools wizard to create a model instance of the built DSL metamodel. Click on File->New->Others... and then select the DSL model.
+  
+  - In the following Figure, we give example of 
+  
+  - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore models.
 
-- The BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
+- Specify the BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
   - See the [Eclipse BPMN2 Modeler User Guide](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf) for informations on how to create BPMN diagrams.
 
 ### 2.2 Use case Models
