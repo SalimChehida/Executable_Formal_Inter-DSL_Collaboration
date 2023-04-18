@@ -121,7 +121,7 @@ In this step, the engineer can:
   - Launch runtime Eclipse.  
   - Right click on the root object of your model (object SRA) and select execute model then abstract behaviour.  
   - Select "Generated injected machine" then click Finish. This will generate the final machine with the valuation of the B abstract sets and the initialisation of B variables.  
-    ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/f85f6d44fd7d3755d856948b3dd49054e751286b/DSLs_Formal_Specification/operation.jpg)
+    ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/148b58d638469dcebd376ab1400fde76cbae0a01/DSLs_Formal_Specification/inject.jpg)
   
   - See the [Meeduse User Guide](http://vasco.imag.fr/tools/meeduse/html/index.html) for more details about the 3 previous steps.
 
