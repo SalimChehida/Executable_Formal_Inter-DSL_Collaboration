@@ -18,8 +18,8 @@ We applied the proposed approach to a smart grid case study provided by RTE, the
   - BPMN2 Modeler:  http://download.eclipse.org/bpmn2-modeler/updates/2020-06/1.5.2  <br>
   - B4MSecure: http://vasco.imag.fr/tools/b4msecure/updates/build <br>
   - Meeduse: http://vasco.imag.fr/tools/meeduse/updates/build <br> 
-Select "Install New Software..." of the Help menu, then add the update sites URL and complete the installation. <br>
-See the [Eclipse User Guide](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-129.htm&cp%3D0_3_17) for instructions on how to install software from update sites.
+   - Select "Install New Software..." of the Help menu, then add the update sites URL and complete the installation. <br>
+   - See the [Eclipse User Guide](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-129.htm&cp%3D0_3_17) for instructions on how to install software from update sites.
 - Download and install the ProB Animator and Model Checker using the following link: <br>
 https://prob.hhu.de/w/index.php?title=Download
 
