@@ -104,9 +104,9 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 In this step, the engineer can:
 - 1) Generate automatically a formal B specification from each DSL and the metamodel of their composition using the Meeduse framework. 
   - Right click on your metamodel (Ecore file (.ecore)) and select "Meeduse: Extract B models".
-  - In the following Figure, we generate a B specification from SRA DSL metamodel.
+  - In the following, we generate a B specification from SRA DSL metamodel.
   
-  - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/1fa37765d23e4834a4ecf907840999576b5e3e75/DSLs_Modeling/models.jpg)
+  - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/2876ff25c30d06f5021953bf052f40d893194cc0/DSLs_Formal_Specification/genB.jpg)
   
   - Three files are extracted: sRA_DSL.ecore.uml (an extraction of a UML model from the ECore file), sRA_DSL.ecore.bmethod (an instance of a B meta-model, extracted from the UML model), and  sRA_DSL.mch (a B specfication defining the static semantics of your DSL represented by sets, variables and typing invariants that define the structural features of the metamodel).
 
