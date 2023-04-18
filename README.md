@@ -12,7 +12,7 @@ We applied the proposed approach to a smart grid case study provided by RTE, the
 
 ## 1.  Installation
 
-- Download and install the Eclipse Modeling Framework using the following link (Any recent distribution should work) : <br>
+- Download and install the Eclipse Modeling Framework (EMF) using the following link (Any recent distribution should work) : <br>
  https://www.eclipse.org/downloads/packages/release/2022-12/r/eclipse-modeling-tools 
 - Launch your eclipse and install BPMN2 Modeler, B4MSecure and Meeduse from the following update sites : <br>
   - BPMN2 Modeler:  http://download.eclipse.org/bpmn2-modeler/updates/2020-06/1.5.2  <br>
@@ -28,8 +28,18 @@ https://prob.hhu.de/w/index.php?title=Download
 ### 2.1 Description
 In this step, the engineer builds:
 - The abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
+  - The following Figure presents example of the specification of SRA DSL metamodel from our use case with the EcoreTools. 
+  ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/9d0eee89a2931846ae8b9393e1dea550d2151b02/DSLs_Formal_Specification/anim.jpg)
+  
+  - The DSL concepts are represented by a metamodel. The different meta-classes (eg.) of the metamodel are characterized by a set of attributes (eg.) and operations (eg.), related by a set of associations (eg.).
+  - EcoreTools provide a wizard setting up your Ecore project. Click on File->New->Others... and then select Ecore Modeling Project.
+
+-> See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodels.
+
+
 - Create models (instances) that conform to the DSL metamodels.
   - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodels and models.
+
 - The BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
   - See the [Eclipse BPMN2 Modeler User Guide](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf) for informations on how to create BPMN diagrams.
 
@@ -75,7 +85,7 @@ In this step, the engineer can:
 - Generate automatically a formal B specification from each DSL and the metamodel of their composition using the Meeduse framework. 
 - Complete manually the execution semantics of the generated machine by specifying the B operations defining actions involved in the collaboration process, and also invariant properties. 
 - Inject the models instance of the metamodels into the DSLs B machines.
-  - See the [Meeduse User Guide]( http://vasco.imag.fr/tools/meeduse/html/index.html) for more details about the 3 previous steps.
+  - See the [Meeduse User Guide](http://vasco.imag.fr/tools/meeduse/html/index.html) for more details about the 3 previous steps.
 - Specify a CSP model from the BPMN diagram built in the previous section (This mapping is done manually, but work in progress intends to automate this transformation).
 
 ### 3.2 Use case B specifications
