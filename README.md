@@ -30,7 +30,7 @@ In this step, the engineer can:
 - 1) Build the abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
   - EcoreTools provide a wizard setting up your Ecore project. Click on File->New->Others... and then select Ecore Modeling Project.
   - Give a name for the project and the DSL metamodel. A subfolder named model will be created. It includes two files (.ecore) and (.aird).
-  - Open the (.aird) file (for the graphical representation) and start the design using the Palette at the right (add classes, relations, etc.)
+  - Open the (.aird) file (for the graphical representation) and start the design using the Palette at the right (add classes, relations, etc.).
   - The following Figure presents example of the specification of SRA DSL metamodel from our use case with the EcoreTools. 
   
   - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/58459f7db3d6bf7576d632f61a02c27168282608/DSLs_Modeling/metamodels.jpg)
@@ -44,7 +44,7 @@ In this step, the engineer can:
   -> In the Ecore Project, click Run Application (the "play" icon) in the toolbar or select Run › Run in the menu. <br> 
   -> Use the EcoreTools wizard to create a model instance of the built DSL metamodel. Click on File->New->Others->Example EMF Model Creation Wizards... and then select the DSL model.
   
-  - In the following Figure, we give example of creating SRA DSL model. 
+  - In the following Figure, we give example of creating SRA DSL model from our use case. 
   
   - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/1fa37765d23e4834a4ecf907840999576b5e3e75/DSLs_Modeling/models.jpg)
 
@@ -53,8 +53,15 @@ In this step, the engineer can:
   - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore models.
 
 - 3) Specify the BPMN diagrams expressing the collaboration between the DSLs using the BPMN2 Modeler.
+  - In the Ecore Project, use the EcoreTools wizard to create a BPMN2 diagram. Click on File->New->Others->BPMN2 ... and then select Generic BPMN 2.0 Diagram.
+  - Open the BPMN diagram and start the design using the Palette at the right (add lanes, tasks, etc.). <br>
+  -> In our approach, we use the notion of BPMN pool, which is the graphical representation of a participant in a collaboration, to group operations of each DSL, including the composition metamodel. We represent an atomic action specifying one metamodel operation by a BPMN task and we use expanded subprocess to represent a grouping of tasks. BPMN sequence flows are used to represent the sequence of actions in the context of a DSL (inside the Pool), while message flows are used to represent the inter-pool communication. Gateways (exclusive or parallel) model the control flow in each DSL. 
   
-  - See the [Eclipse BPMN2 Modeler User Guide](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf) for informations on how to create BPMN diagrams.
+   - In the following Figure, we give example of creating a BPMN collaboration model of SRA DSL and CM DSL from our use case. 
+   
+   - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/1fa37765d23e4834a4ecf907840999576b5e3e75/DSLs_Modeling/models.jpg)
+   
+   - See the [Eclipse BPMN2 Modeler User Guide](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf) for informations on how to create BPMN diagrams.
 
 ### 2.2 Use case Models
 
