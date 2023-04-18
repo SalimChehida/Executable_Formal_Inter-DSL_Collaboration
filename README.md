@@ -59,7 +59,7 @@ In this step, the engineer can:
   
    - In the following Figure, we give example of creating a BPMN collaboration model of SRA DSL and CM DSL from our use case. 
    
-   - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/1fa37765d23e4834a4ecf907840999576b5e3e75/DSLs_Modeling/models.jpg)
+   - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/29ebb0c5823c63f6831af9b608e0390ea9730238/DSLs_Modeling/bpmn.jpg)
    
    - See the [Eclipse BPMN2 Modeler User Guide](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf) for informations on how to create BPMN diagrams.
 
