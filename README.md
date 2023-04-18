@@ -102,16 +102,24 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 
 ### 3.1 Description
 In this step, the engineer can:
-1)- Generate automatically a formal B specification from each DSL and the metamodel of their composition using the Meeduse framework. 
-  - Right click on your metamodel Ecore file (.ecore) and select "Meeduse: Extract B models".
-  - >
+-1) Generate automatically a formal B specification from each DSL and the metamodel of their composition using the Meeduse framework. 
+  - Right click on your metamodel (Ecore file (.ecore)) and select "Meeduse: Extract B models".
+  - In the following Figure, we generate a B specification from SRA DSL metamodel.
+  
+  - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/1fa37765d23e4834a4ecf907840999576b5e3e75/DSLs_Modeling/models.jpg)
+  
+  - Three files are extracted: sRA_DSL.ecore.uml (an extraction of a UML model from the ECore file), sRA_DSL.ecore.bmethod (an instance of a B meta-model, extracted from the UML model), and  sRA_DSL.mch (a B specfication defining the static semantics of your DSL represented by sets, variables and typing invariants that define the structural features of the metamodel).
 
-2)- Complete manually the execution semantics of the generated machine by specifying the B operations defining actions involved in the collaboration process, and also invariant properties. 
+-2) Complete manually the execution semantics of the generated machine by specifying the B operations defining actions involved in the collaboration process, and also invariant properties. 
+  - Create in folder "model", a new file named sRA_DSL_main.mch. It is important to keep the files inside folder "model". They must be located in the same folder as the Ecore file.
+  - File "sRA_DSL_main.mch" defines the operational semantics of the DSL. The following specifies the operations : selectThreat, computeDefenses, and initSRA.
+ 
+ - ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/1fa37765d23e4834a4ecf907840999576b5e3e75/DSLs_Modeling/models.jpg)
 
-3)- Inject the models instance of the metamodels into the DSLs B machines.
+-3) Inject the models instance of the metamodels into the DSLs B machines.
   
   -> See the [Meeduse User Guide](http://vasco.imag.fr/tools/meeduse/html/index.html) for more details about the 3 previous steps.
-- Specify a CSP model from the BPMN diagram built in the previous section (This mapping is done manually, but work in progress intends to automate this transformation).
+-4) Specify a CSP model from the BPMN diagram built in the previous section (This mapping is done manually, but work in progress intends to automate this transformation).
 
 ### 3.2 Use case B specifications
 
