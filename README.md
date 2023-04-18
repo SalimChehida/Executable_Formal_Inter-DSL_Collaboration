@@ -29,12 +29,12 @@ https://prob.hhu.de/w/index.php?title=Download
 In this step, the engineer builds:
 - The abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
   - The following Figure presents example of the specification of SRA DSL metamodel from our use case with the EcoreTools. 
-  ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/9d0eee89a2931846ae8b9393e1dea550d2151b02/DSLs_Formal_Specification/anim.jpg)
+  ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/58459f7db3d6bf7576d632f61a02c27168282608/DSLs_Modeling/metamodels.jpg)
   
   - The DSL concepts are represented by a metamodel. The different meta-classes (eg.) of the metamodel are characterized by a set of attributes (eg.) and operations (eg.), related by a set of associations (eg.).
   - EcoreTools provide a wizard setting up your Ecore project. Click on File->New->Others... and then select Ecore Modeling Project.
 
--> See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodels.
+  - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodels.
 
 
 - Create models (instances) that conform to the DSL metamodels.
