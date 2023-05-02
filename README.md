@@ -44,7 +44,7 @@ In this step, the engineer can:
   -> In the Ecore Project, click Run Application (the "play" icon) in the toolbar or select Run › Run in the menu. <br> 
   -> Use the EcoreTools wizard to create a model instance of the built DSL metamodel. Click on File->New->Others->Example EMF Model Creation Wizards... and then select the DSL model, and the Model Object (the root metaclass of the DSL).
   
-  - In the following Figure, we give example of creating SRA DSL model from our use case. During the wizard-based creation of an SAR model, the selected Model Object should be SRA (the root metaclass of SRA). 
+  - In the following Figure, we give example of creating SRA DSL model from our use case. During the wizard-based creation of an SRA model, the selected Model Object should be SRA (the root metaclass of SRA). 
   
    ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/1fa37765d23e4834a4ecf907840999576b5e3e75/DSLs_Modeling/models.jpg)
 
