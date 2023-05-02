@@ -57,7 +57,7 @@ In this step, the engineer can:
   - Open the BPMN diagram and start the design using the Palette at the right of the IDE windows (add lanes, tasks, etc.). <br>
   -> In our approach, we use the notion of BPMN pool, which is the graphical representation of a participant in a collaboration, to group operations of each DSL, including the composition metamodel. We represent an atomic action specifying one metamodel operation by a BPMN task and we use expanded subprocess to represent a grouping of tasks. BPMN sequence flows are used to represent the sequence of actions in the context of a DSL (inside the Pool), while message flows are used to represent the inter-pool communication. Gateways (exclusive or parallel) model the control flow in each DSL. 
   
-   - In the following Figure, we give example of creating a BPMN collaboration model of SRA DSL and CM DSL from our use case. In the Eclipse Ecore project, the model can be find at : /Inter_DSL_Collaboration_CM_SRA/model/collaboration_CM_SRA.bpmn
+   - In the following Figure, we give example of creating a BPMN collaboration model of SRA DSL and CM DSL from our use case. In the Eclipse Ecore project, the model can be find at : "/Inter_DSL_Collaboration_CM_SRA/model/collaboration_CM_SRA.bpmn"
    
     ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/29ebb0c5823c63f6831af9b608e0390ea9730238/DSLs_Modeling/bpmn.jpg)
    
