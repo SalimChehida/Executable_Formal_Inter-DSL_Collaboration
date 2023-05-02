@@ -103,7 +103,7 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 
 ## 3. Formal Specification in B language 
 
-
+Section 3.1 explains the different steps of for generating B machines from the DSLs metmodels and models, as well as steps for specifying the CSP model from the BPMN diagram. Section 3.2 gives path in the GitHub repository of formal specifications generated from DSL metamodels and models of our case study.
 
 ### 3.1 Description
 In this step, the engineer can:
