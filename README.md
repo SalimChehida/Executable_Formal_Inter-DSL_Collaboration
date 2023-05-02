@@ -26,6 +26,8 @@ https://prob.hhu.de/w/index.php?title=Download
 
 ## 2.  Modeling DSLs and their Collaboration
 
+In Section 2.1, we describe the different steps of the modeling part: create the DSL metamodels and models using EcoreTools, then the BPMN diagram that describes the collaboration between the DSLs using the BPMN2 Modeler. Section explains how to import the DSL metamodels and models from our case study in Eclipse, then gives the models code source path in the GitHub repository.
+
 ### 2.1 Description
 In this step, the engineer can:
 - 1) Build the abstract syntax of each DSL and the metamodel of their composition using EMF-based modelling tool (Ecore, Xtext, Sirius, GMF, etc.).
@@ -66,7 +68,13 @@ In this step, the engineer can:
 
 ### 2.2 Use case Models
 
-#### 2.2.1 Models code source in GIT
+#### 2.2.1 Open the DSL metamodels and models in Eclipse
+- Open Eclipse and choose Import –> Projects from Git (with smart import) 
+- Choose the Clone URI option in the Git import wizard and click Next. 
+- Confirm the URI (https://github.com/SalimChehida/Inter-DSL-Collaboration.git), Host and Repository path parameters and click Next. 
+- Choose the Git branches to clone from the remote repository and click Next.
+
+#### 2.2.2 Models code source in GIT
 
 Below the Git links of the models and metamodels from the smart grid use case :
 
@@ -91,11 +99,7 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 - The BPMN model of inter-DSL collaboration (Figure 5 in the paper) is available at: <br>
 https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Modeling/Metamodels/Inter_DSL_Collaboration_CM_SRA/model/collaboration_CM_SRA.bpmn
 
-#### 2.2.2 Open the DSL metamodels and models in Eclipse
-- Open Eclipse and choose Import –> Projects from Git (with smart import) 
-- Choose the Clone URI option in the Git import wizard and click Next. 
-- Confirm the URI (https://github.com/SalimChehida/Inter-DSL-Collaboration.git), Host and Repository path parameters and click Next. 
-- Choose the Git branches to clone from the remote repository and click Next.
+
 
 ## 3. Formal Specification in B language 
 
