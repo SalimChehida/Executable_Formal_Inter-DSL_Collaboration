@@ -96,7 +96,7 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 - Confirm the URI (https://github.com/SalimChehida/Inter-DSL-Collaboration.git), Host and Repository path parameters and click Next. 
 - Choose the Git branches to clone from the remote repository and click Next.
 
-## 3. Formal Specification in B language
+## 3. Formal Specification in B language 
 
 
 
