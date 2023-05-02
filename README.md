@@ -119,7 +119,7 @@ In this step, the engineer can:
 - 3) Inject the models instance of the metamodels into the DSLs B machines.
 
   - Launch runtime Eclipse.  
-  - Right click on the root object of your model (object SRA) and select execute model then abstract behaviour.  
+  - Right click on the root object (eg. object SRA) of your model (eg. model My.sra) and select execute model then abstract behaviour.  
   - Select "Generated injected machine" then click Finish. This will generate the final machine with the valuation of the B abstract sets and the initialisation of B variables.  
     ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/148b58d638469dcebd376ab1400fde76cbae0a01/DSLs_Formal_Specification/inject.jpg)
   
