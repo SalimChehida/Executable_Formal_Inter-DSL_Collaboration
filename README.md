@@ -26,7 +26,7 @@ https://prob.hhu.de/w/index.php?title=Download
 
 ## 2.  Modeling DSLs and their Collaboration
 
-In Section 2.1, we describe the different steps of the modeling part: create the DSL metamodels and models using EcoreTools, then the BPMN diagram that describes the collaboration between the DSLs using the BPMN2 Modeler. Section explains how to import the DSL metamodels and models from our case study in Eclipse, then gives the models code source path in the GitHub repository.
+In Section 2.1, we describe the different steps of the modeling part: create the DSL metamodels and models using EcoreTools, then the BPMN diagram that describes the collaboration between the DSLs using the BPMN2 Modeler. Section 2.2 explains how to import the DSL metamodels and models from our case study in Eclipse, then gives the models code source path in the GitHub repository.
 
 ### 2.1 Description
 In this step, the engineer can:
