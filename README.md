@@ -164,7 +164,7 @@ https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordinat
 
 ## 4. Animation and Verification
 
-
+We give the instructions for launching the animation of B machine guided by a CSP model using ProB, then we show animation scenario of the composition B machine from our case study.
 
 ### 4.1 Description
 
