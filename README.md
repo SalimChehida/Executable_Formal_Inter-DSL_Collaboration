@@ -31,7 +31,7 @@ In this step, the engineer can:
   - EcoreTools provide a wizard setting up your Ecore project. Click on File->New->Others... and then select Ecore Modeling Project.
   - Give a name for the project and the DSL metamodel. A subfolder named model will be created. It includes two files (.ecore) and (.aird).
   - Open the (.aird) file (for the graphical representation) and start the design using the Palette at the right the IDE windows (add classes, relations, etc.).
-  - The following Figure presents example of the specification of SRA DSL metamodel from our use case with the EcoreTools. 
+  - The following Figure presents example of the specification of SRA DSL metamodel from our use case with the EcoreTools. For the graphical representation in the Figure, it is necessary to open an .aird file, select Representations, expand Design > Entities in a Class Diagram, and double click on the sub-items, e.g., "sRA_DSL". 
   
    ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/58459f7db3d6bf7576d632f61a02c27168282608/DSLs_Modeling/metamodels.jpg)
   
