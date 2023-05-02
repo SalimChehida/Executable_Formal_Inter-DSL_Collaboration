@@ -22,6 +22,7 @@ We applied the proposed approach to a smart grid case study provided by RTE, the
 -> See the [Eclipse User Guide](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Ftasks%2Ftasks-129.htm&cp%3D0_3_17) for instructions on how to install software from update sites.
 - Download and install the ProB Animator and Model Checker using the following link: <br>
 https://prob.hhu.de/w/index.php?title=Download
+  - We note there are several failures with ProB when running it on MacOS (an Arm processor), which can prevent the execution of the final verification step (Section 4).
 
 ## 2.  Modeling DSLs and their Collaboration
 
