@@ -1,4 +1,4 @@
-# An MDE Framework for Inter-DSL Collaboration
+# A Formal MDE Framework for Inter-DSL Collaboration
 
 A Domain-Specific Language (DSL) is used for building models appropriate to specific application domain or specific aspect of the system.  In many cases, a set of models from heterogeneous and independent DSLs are collaboratively combined to specify the same system. This need to define explicit links between the various models and also to manage the collaboration between them.
 
