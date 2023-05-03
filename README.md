@@ -36,7 +36,7 @@ In this step, the engineer can:
   - Open the (.aird) file (for the graphical representation) and start the design using the Palette at the right the IDE windows (add classes, relations, etc.).
   - The following Figure presents example of the specification of SRA DSL metamodel from our use case with the EcoreTools. For the graphical representation in the Figure, it is necessary to open an ".aird" file, select Representations, expand Design > Entities in a Class Diagram, and double click on the sub-items, e.g., "sRA_DSL". 
   
-   ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/58459f7db3d6bf7576d632f61a02c27168282608/DSLs_Modeling/metamodels.jpg)
+   ![alt text](/DSLs_Modeling/metamodels.jpg)
   
   - The DSL concepts are represented by a metamodel. The different meta-classes (eg. SRA) of the metamodel are characterized by a set of attributes (eg. nameSRAM) and operations (eg. selectThreat), related by a set of associations (eg. defenses).
   - See the [Eclipse EMF Tutorial](https://www.vogella.com/tutorials/EclipseEMF/article.html) for informations on how to create an Ecore metamodels.
