@@ -49,7 +49,7 @@ In this step, the engineer can:
   
   - In the following Figure, we give example of creating SRA DSL model from our use case. During the wizard-based creation of an SRA model, the selected Model Object should be SRA (the root metaclass of SRA). 
   
-   ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/1fa37765d23e4834a4ecf907840999576b5e3e75/DSLs_Modeling/models.jpg)
+   ![alt text](/DSLs_Modeling/models.jpg)
 
   - Use right click in root metaclass (eg. SRA) to create new child (eg. Threat or Defense)
   
@@ -62,7 +62,7 @@ In this step, the engineer can:
   
    - In the following Figure, we give example of creating a BPMN collaboration model of SRA DSL and CM DSL from our use case. In the Eclipse Ecore project, the model can be find at : "/Inter_DSL_Collaboration_CM_SRA/model/collaboration_CM_SRA.bpmn"
    
-    ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/29ebb0c5823c63f6831af9b608e0390ea9730238/DSLs_Modeling/bpmn.jpg)
+    ![alt text](/DSLs_Modeling/bpmn.jpg)
    
    - See the [Eclipse BPMN2 Modeler User Guide](https://www.eclipse.org/bpmn2-modeler/documentation/BPMN2ModelerUserGuide-1.0.1.pdf) for informations on how to create BPMN diagrams.
 
@@ -111,7 +111,7 @@ In this step, the engineer can:
   - Right click on your metamodel (Ecore file (.ecore)) and select "Meeduse: Extract B models".
   - In the following, we generate a B specification from SRA DSL metamodel.
   
-   ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/2876ff25c30d06f5021953bf052f40d893194cc0/DSLs_Formal_Specification/genB.jpg)
+   ![alt text](/DSLs_Formal_Specification/genB.jpg)
   
   - Three files are extracted: sRA_DSL.ecore.uml (an extraction of a UML model from the ECore file), sRA_DSL.ecore.bmethod (an instance of a B meta-model, extracted from the UML model), and  sRA_DSL.mch (a B specfication defining the static semantics of your DSL represented by sets, variables and typing invariants that define the structural features of the metamodel).
 
@@ -119,14 +119,14 @@ In this step, the engineer can:
   - Create in folder "model", a new file named sRA_DSL_main.mch. It is important to keep the files inside folder "model". They must be located in the same folder as the Ecore file.
   - File "sRA_DSL_main.mch" defines the operational semantics of the DSL. The following specifies the operations : selectThreat, computeDefenses, and initSRA.
  
-  ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/f85f6d44fd7d3755d856948b3dd49054e751286b/DSLs_Formal_Specification/operation.jpg)
+  ![alt text](/DSLs_Formal_Specification/operation.jpg)
 
 - 3) Inject the models instance of the metamodels into the DSLs B machines.
 
   - Launch runtime Eclipse.  
   - Right click on the root object (eg. object "SRA RTE sec model") of your model (eg. model "My.sra_dsl") and select execute model then abstract behaviour.  
   - Select "Generated injected machine" then click Finish. This will generate the final machine with the valuation of the B abstract sets and the initialisation of B variables.  
-    ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/148b58d638469dcebd376ab1400fde76cbae0a01/DSLs_Formal_Specification/inject.jpg)
+    ![alt text](/DSLs_Formal_Specification/inject.jpg)
   
   - See the [Meeduse User Guide](http://vasco.imag.fr/tools/meeduse/html/index.html) for more details about the 3 previous steps.
 
@@ -143,7 +143,7 @@ Process ::= SKIP /* terminating process */<br>
 | Process ; Process /* sequential composition */<br> 
 | Process [] Process /* external choice */<br> 
   - The following specifies the BPMN collaboration model of SRA DSL and CM DSL from our use case into CSP.
-    ![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/3edc3a51365a015ff3aaee0d279bac1fbee67927/DSLs_Formal_Specification/csp.jpg)
+    ![alt text](/DSLs_Formal_Specification/csp.jpg)
 
 ### 3.2 Use case B specifications
 
@@ -182,7 +182,7 @@ The following Figure presents example of the animation of the [composition B mac
 
 - Tu run the animation, Open [composition B machine](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/artefacts-coordination/DSLs_Formal_Specification/inter_DSL_Collaboration_CM_SRA_main.mch), then select File menu/Open Special/Use Default CSP.
 
-![alt text](https://github.com/SalimChehida/Inter-DSL-Collaboration/blob/9d0eee89a2931846ae8b9393e1dea550d2151b02/DSLs_Formal_Specification/anim.jpg)
+![alt text](/DSLs_Formal_Specification/anim.jpg)
 
 - The History window shows an execution scenario example animated using the ProB tool.    
 
