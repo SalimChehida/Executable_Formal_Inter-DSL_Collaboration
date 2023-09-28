@@ -2,31 +2,20 @@ MACHINE
 	inter_DSL_Collaboration_CM_SRA_main
 INCLUDES
  	cM_DSL_main, sRA_DSL_main
-
 PROMOTES
-	selectConfig, validateConfig,  setQoS, 
-    	selectThreat, computeDefenses, initSRA
-
-SETS
-	
-	COMPOSITION_AS;
-	SECURECONFIGURATION
-
+selectConfig, validateConfig,  setQoS, selectThreat, computeDefenses, initSRA
+SETS	
+	COMPOSITION_AS; SECURECONFIGURATION
 DEFINITIONS
     sumDefCost(sc) == SIGMA def . (def : validDefenses[{sc}] | costDef(def))
-
 CONSTANTS
 	COMPOSITION_AS1
-
 PROPERTIES
-	
-	
 	COMPOSITION_AS1 : COMPOSITION_AS &
 	card({COMPOSITION_AS1}) = 1 &
 	COMPOSITION_AS /= {} 
 
 VARIABLES
-	
         COMPOSITION,
 	SecureConfiguration,
         sra,
